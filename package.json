@@ -1,0 +1,16 @@
+{
+  "name": "js-practice",
+  "version": "1.0.0",
+  "description": "js-practice",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass sass/main.scss css/style.css -w",
+    "devServer":"live-server",
+    "start": "concurrently \"sass sass/main.scss css/style.css -w\" \"live-server\""
+  },
+  "author": "bosscke",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "1.32.12"
+  }
+}

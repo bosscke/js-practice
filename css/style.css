@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: monospace;
+  font-size: 1.4rem;
+}
+
+aside {
+  background-color: aqua;
+}
+
+body {
+  background-color: #262626;
+  display: grid;
+  grid-template-rows: 10vh 6vh repeat(3, min-content);
+  grid-template-columns: repeat(4, minmax(1fr, max-content));
+}
+
+footer {
+  background-color: darkorange;
+  grid-column: 1/5;
+}
+
+header {
+  background-color: grey;
+  grid-column: 1/5;
+}
+
+main {
+  background-color: #ccccb3;
+  grid-column: 2/5;
+  padding: 0 1rem;
+}
+main ul {
+  list-style: inside;
+}
+
+nav {
+  background: darkblue;
+  grid-column: 1/5;
+}
+
+/*# sourceMappingURL=style.css.map */
