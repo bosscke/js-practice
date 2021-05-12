@@ -4,3 +4,7 @@ body {
   grid-template-rows: 10vh 6vh repeat(3, min-content); //the height of header, navigation, aside, main, footer
   grid-template-columns: repeat(4, minmax(1fr, max-content));
 }
+p,
+ul {
+  margin: $standard-margin-tb;
+}

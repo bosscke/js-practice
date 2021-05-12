@@ -1,4 +1,8 @@
 nav {
-  background: darkblue;
+  background-color: $base-color;
+  display: grid;
   grid-column: 1 / 5;
+  align-content: center;
+  border-bottom: 1px solid $base2-color;
+  padding-left: $standard-padding-l;
 }

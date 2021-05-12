@@ -1,4 +1,6 @@
 footer {
   background-color: darkorange;
+  display: grid;
   grid-column: 1 / 5;
+  justify-content: center;
 }

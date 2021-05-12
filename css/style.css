@@ -5,15 +5,24 @@
 
 body {
   font-size: 62.5%;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: monospace;
+  font-family: "Segoe UI", Arial, monospace;
   font-size: 1.4rem;
 }
 
+code {
+  color: #0052cc;
+  font-style: normal;
+}
+
 aside {
-  background-color: aqua;
+  background-color: #fcfcfc;
+  display: grid;
+  align-content: center;
+  padding-left: 2rem;
 }
 
 body {
@@ -23,28 +32,42 @@ body {
   grid-template-columns: repeat(4, minmax(1fr, max-content));
 }
 
+p,
+ul {
+  margin: 1rem 0;
+}
+
 footer {
   background-color: darkorange;
+  display: grid;
   grid-column: 1/5;
+  justify-content: center;
 }
 
 header {
   background-color: grey;
+  display: grid;
   grid-column: 1/5;
+  align-content: center;
+  padding-left: 2rem;
 }
 
 main {
   background-color: #ccccb3;
   grid-column: 2/5;
-  padding: 0 1rem;
+  padding-left: 2rem;
 }
 main ul {
   list-style: inside;
 }
 
 nav {
-  background: darkblue;
+  background-color: #fcfcfc;
+  display: grid;
   grid-column: 1/5;
+  align-content: center;
+  border-bottom: 1px solid #808080;
+  padding-left: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,4 +1,8 @@
 body {
-  font-family: monospace;
+  font-family: "Segoe UI", Arial, monospace;
   font-size: 1.4rem;
+}
+code {
+  color: $em-color;
+  font-style: normal;
 }
