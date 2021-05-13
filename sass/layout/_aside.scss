@@ -1,6 +1,8 @@
 aside {
   background-color: $base-color;
   display: grid;
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
   align-content: center;
   padding-left: $standard-padding-l;
 }

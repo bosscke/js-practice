@@ -1,8 +1,41 @@
 nav {
   background-color: $base-color;
   display: grid;
+  grid-row: 2 / 3;
   grid-column: 1 / 5;
-  align-content: center;
+  // align-content: center;
+  // justify-content: space-between;
   border-bottom: 1px solid $base2-color;
   padding-left: $standard-padding-l;
+}
+
+.nav {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-left {
+      & ul li {
+        list-style-type: none;
+
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+
+    &-right {
+      margin-right: $standard-margin-r;
+
+      & ul li {
+        display: inline;
+        margin-left: $standard-margin-l;
+
+        & a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
 }

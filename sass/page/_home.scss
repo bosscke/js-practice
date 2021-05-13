@@ -1,0 +1,44 @@
+.home {
+  display: grid;
+  grid-template-rows: 20vh 9vh 5vh repeat(3, min-content);
+  grid-template-columns: repeat(4, minmax(1fr, max-content));
+
+  &__header {
+    background-color: $base2-color;
+    grid-row: 1 / 2;
+    grid-column: 1 / 6;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: flex-end;
+    grid-row: 2 / 3;
+    grid-column: 1 / 6;
+
+    ul {
+      margin: $standard-margin-r;
+    }
+
+    li {
+      list-style: none;
+      display: inline;
+      margin: $standard-margin-l;
+    }
+  }
+
+  &__search {
+    grid-row: 3 / 4;
+    grid-column: 1 / 6;
+    background-color: $base-color;
+  }
+  &__main {
+    grid-row: 4/ 5;
+    grid-column: 1 / 6;
+  }
+
+  &__footer {
+    grid-row: 5 / 6;
+    grid-column: 1 / 6;
+    background-color: red;
+  }
+}

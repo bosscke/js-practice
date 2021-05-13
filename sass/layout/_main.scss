@@ -1,9 +1,17 @@
-main {
+.main {
   background-color: #ccccb3;
   grid-column: 2 / 5;
   padding-left: $standard-padding-l;
 
   ul {
     list-style: inside;
+    margin: $standard-margin-tb;
+  }
+
+  table,
+  td {
+    border: 1px solid $base2-color;
+    border-collapse: collapse;
+    padding: 0.5rem;
   }
 }

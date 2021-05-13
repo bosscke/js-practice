@@ -3,9 +3,12 @@
 @import "base/base";
 @import "base/typography";
 
+@import "layout/article";
 @import "layout/aside";
 @import "layout/body";
 @import "layout/footer";
 @import "layout/header";
 @import "layout/main";
 @import "layout/navigation";
+
+@import "page/home";

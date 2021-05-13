@@ -1,10 +1,14 @@
 body {
   background-color: #262626;
   display: grid;
-  grid-template-rows: 10vh 6vh repeat(3, min-content); //the height of header, navigation, aside, main, footer
-  grid-template-columns: repeat(4, minmax(1fr, max-content));
+  grid-template-rows: 10vh 7vh max-content; //the height of header, navigation, aside, main, footer
+  grid-template-columns: 11vw;
+
+  p {
+    margin: $standard-margin-tb;
+    width: 60vw;
+  }
 }
-p,
-ul {
-  margin: $standard-margin-tb;
-}
+//repeat(3, min-content);
+
+// repeat(4, minmax(1fr, max-content));

@@ -10,17 +10,66 @@
 <body>
     
     <header>JavaScript Output - Header</header>
-    <nav><p>Navigation</p></nav>
-    <aside>Aside</aside>
-    <main>
+    <nav>
+        
+    </nav>
+    <aside>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li>About</li>
+        </ul>
+    </aside>
+    <main class="main">
         <h1>JS Display Possibilities</h1>
         <p>JS can dispaly data in different ways:</p>
         <ul>
             <li>Writing into an HTML element, using <code>innerHTML</code></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>Writing into the HTML output using <code>document.write()</code></li>
+            <li>Writing into an alert box using <code>window.alert()</code></li>
+            <li>Writing into the browser console using <code>console.log()</code></li>
         </ul>
+        <article>
+            <h2>Using innerHTML</h2>
+            <p>To acces an HTML element JS can use the <code>document.getElementById(id)</code> method.</p>
+            <p>The <code>id</code> attribute defines the html element, the <code>innerHTML</code>property defines the HTML content:</p>
+
+            <p id="test"></p>
+            <script>
+                document.getElementById('test').innerHTML = '"See the script in the HTML"';
+            </script>
+            <p class="note">Changing the innerHTML property of an HTML element is a common way to display data in HTML. </p>
+        </article>
+
+        <article>
+            <h2>Using document.write()</h2>
+            <p>It is convenient for testing purposes to use <code>document.write()</code></p>
+            <script>
+                document.write(5 + 6);
+            </script>
+            <p class="note">Using document.write() after an HTML document is loaded, will delete all existing HTML! It should be only used for testing.</p>
+        </article>
+
+        <article>
+            <h2>Using window.alert()</h2>
+            <p>We can use an alert box to display data:</p>
+
+            <code>
+                &lt;script&gt;
+                    window.alert(1 + 1);
+                &lt;/script&gt;
+            </code>
+            <p class="note">We can skip the <code>window</code> keyword. In JS the window object is the global scope object that means variables, properties, methods by default belong the window object.</p>
+            
+            <h3>JavaScript Print</h3>
+            <p>JS doesn't have any print object or print methods. The exception is that we can call the <code>window.print()</code> mthod in the browser to print the content of the current window.</p>
+
+        </article>
+
+        <article>
+            <h2>Using console.log()</h2>
+            <p>For debugging purposes we can call the <code>console.log()</code> method in the browser to display data.</p>
+        </article>
+
     </main>
     <footer><p>Footer</p></footer>
     

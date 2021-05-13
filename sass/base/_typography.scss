@@ -1,8 +1,22 @@
 body {
   font-family: "Segoe UI", Arial, monospace;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
 code {
   color: $em-color;
   font-style: normal;
+}
+
+#test,
+#test2,
+#test3,
+#test4 {
+  color: $script-color;
+}
+
+h1,
+h2,
+h3 {
+  color: $h2-color;
+  margin: $standard-margin-tb;
 }

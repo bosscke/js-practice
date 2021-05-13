@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Template</title>
+</head>
+<body>
+    <header>Template</header>
+    <nav class="nav">
+        <div class="nav__container">
+            <div class="nav__container-left">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>                    
+                </ul>  
+            </div>
+            <div class="nav__container-right">
+                <ul>
+                    <li><a href="3-output/output.html">JS-Practice</a></li>
+                    <li>About</li>
+                </ul>
+            </div>
+        </div>       
+    </nav>
+    <aside>
+        
+    </aside>
+    <main class="main">
+        <h1>JavaScript Statements</h1>
+        <ul>
+            <li>JavaScript Programs</li>
+            <li>JS Statements</li>
+            <li>Semicolons</li>
+            <li>JS White Space</li>
+            <li>JS Line Length and Line Breaks</li>
+            <li>JS Code Blocks</li>
+            <li>JS Keywords</li>
+       </ul>
+       <article>
+           <h2>JavaScript Programs</h2>
+           <p>A program is a list of 'instructions' to be executed by a computer, in a programming language these instructions are called statements. JS program is a list of statements.</p>
+       </article> 
+       <article>
+           <h2>JS Statements</h2>
+           <p>JS statements are composed of:</p>
+           <ul>
+               <li>Values</li>
+               <li>Operators</li>
+               <li>Expressions</li>
+               <li>Keywords</li>
+               <li>Comments</li>
+           </ul>
+           <div id="test"></div>
+           <script>
+               document.getElementById("test").innerHTML = 'Hey buddy!'
+           </script>
+       </article>
+
+       <article>
+           <h2>Semicolons ;</h2>
+           <p>Semicolons ; separate JS statements.</p>
+       </article>
+
+       <article>
+           <h2>JS White Space</h2>
+           <p>JS ignores white space, it is a good practice to put space around operators.</p>
+       </article>
+
+       <article>
+           <h2>JS Line LEngth and Line Breaks</h2>
+           <p>Avoid code lines longer 80 characters.</p>
+
+           <div id="test2"></div>
+
+           <script>
+               document.getElementById("test2").innerHTML = 
+               "Short code!";
+           </script>
+       </article>
+
+       <article>
+           <h2>JS Code Blocks</h2>
+           <p>JS statements can be grouped together in code blocks, inside curly brackets {...}.</p>
+           <p>The purpose of code blocks is to define statemetns to be executed together.</p>
+
+           <div id="test3"></div>
+           <div id="test4"></div>
+           <button type="button" onclick="myFunctions()">Dude just click!</button>
+           <script>
+               function myFunctions() {
+                   document.getElementById("test3").innerHTML = "Hiya there!";
+                   document.getElementById("test4").innerHTML = "Whhaaaattt uuup!";
+               }
+           </script>
+       </article>
+
+       <article>
+           <h2>JS Keywords</h2>
+           <p>JS statements often start with a <em>keyword</em> to identify the JS action to be performed. Here a lsist</p>
+
+           <table>
+               <tr>
+                   <th>
+                       Keyword
+                   </th>
+                   <th>
+                       Description
+                   </th>
+               </tr>
+               <tr>
+                   <td>
+                       break
+                   </td>
+                   <td>
+                       Terminates a switch  or loop
+                   </td>
+               </tr>
+               <tr>
+                   <td>
+                       continue
+                   </td>
+                   <td>
+                       Jumps out of a loop and starts at the loop
+                   </td>
+               </tr>
+               <tr>
+                   <td>
+                       debugger
+                   </td>
+                   <td>
+                       Stops the execution of JS an repeats the block while condition is true
+                   </td>
+               </tr>
+               <tr>
+                   <td>
+                    do .. while
+                   </td>
+                   <td>
+                    Executes a block of statements 
+                   </td>
+               </tr>
+                <tr>
+                   <td>
+                    for
+                   </td>
+                   <td>
+                    Marks a block of statement to be executed as long as condition is true
+                   </td>
+               </tr>
+               <tr>
+                   <td>
+                       function
+                   </td>
+                   <td>
+                       Declares a function
+                   </td>
+               </tr>
+                <tr>
+                    <td>
+                    if .. else
+                    </td>
+                    <td>
+                    Marks a block of code to be executed, depending on a condition
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                return
+                    </td>
+                    <td>
+                        Exits a function
+                    </td>
+                </tr>
+                 <tr>
+                    <td>
+                   switch
+                     </td>
+                     <td>
+                   Marks a block of statement to be executed, depending on different cases
+                   </td>
+                    </tr>
+                    <tr>
+                        <td>
+                    try ...catch
+                        </td>
+                        <td>
+                    Implements error handling to a block of statements
+                      </td>
+                    </tr>
+                     <tr>
+                    <td>
+                        var 
+                      </td>
+                       <td>
+                        Declares a variable
+                     </td>
+                </tr>
+           </table>
+       </article>
+
+    </main>
+    <footer>Footer</footer>
+    
+</body>
+</html>
