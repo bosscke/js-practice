@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>let</title>
+</head>
+<body>
+    <header>let</header>
+    <nav class="nav">
+        <div class="nav__container">
+            <div class="nav__container-left">
+                <ul>
+                    <li><a href="../__index.html">Home</a></li>                    
+                </ul>  
+            </div>
+            <div class="nav__container-right">
+                <ul>
+                    <li><a href="3-output/output.html">JS-Practice</a></li>
+                    <li>About</li>
+                </ul>
+            </div>
+        </div>       
+    </nav>
+    <aside>
+        Aside
+    </aside>
+    <main class="main">
+        <h1>JS Let</h1>
+        <ul>
+            <li>ECMAScript 2015</li>
+            <li>Global Scope</li>
+            <li>Function Scope</li>
+            <li>JS Block Scope</li>
+            <li>Redeclaring Variables</li>
+            <li>Browser Supprt</li>
+            <li>Loop Scope</li>
+            <li>Function Scope</li>
+            <li>Global Scope</li>
+            <li>Global Variables in HTML</li>
+            <li>Redeclaring</li>
+            <li>Hoisting</li>
+        </ul>
+        <article>
+            <h2>ECMAScript 2015</h2>
+            <p>ES2015 introduced two important new JS keywords <code>let</code> and <code>const</code>.</p>
+            <p>These two keywords provide <strong>Block Scope</strong> variables (and constants) in JS.</p>
+            <p>Before ES2015 JS had only two types of scope: <strong>Global Scope</strong> and <strong>Function Scope</strong>.</p>
+        </article>
+
+        <article>
+            <h2>Global Scope</h2>
+            <p>Variables declared <strong>Globally</strong> (outside any function) have <strong>Global Scope</strong>.</p>
+            <code>var countryName = "Czech Rep.";</code><br>
+            <span>// code here can use countryName</span><br>
+            <code>function myFunction() {</code><br>
+                <span>// code here can also use countryName</span><br>
+                <code>}</code>
+            <p><strong>Global</strong> variables can be accessed from anywhere in a JS program.</p>
+        </article>
+
+        <article>
+            <h2>Function Scope</h2>
+            <p>Variables declared <strong>Locally</strong> (inside a function) have <strong>Function Scope</strong>.</p>
+            <span>// code here cannot use countryName</span><br>
+            
+            <code>function myFunction() {</code><br>
+                <code>var countryName = "Czech Rep.";</code><br>
+                <span>// code here can use countryName</span><br>
+                <code>}</code><br>
+                <span>// code here cannot use countryName</span>
+            <p><strong>Local</strong> variables can only be accessed from inside the function where they are declared.</p>
+        </article>
+
+        <article>
+            <h2>JS Block</h2>
+            <p>Variables declared with the <code>var</code> keyword cannot have <strong>Block Scope</strong>.</p>
+            <p>Variables declared inside a block {} can be accessed from outside the block.</p>
+            <code>{</code><br>
+                <code>var x  = 5;</code><br>
+                <code>}</code><br>
+                <span>// x can be used here</span>
+            <p>Variables declared with the <code>let</code> keyword</p>
+            <p>Before ES2015 JS didn't have Block Scope.</p>
+            <p>Variables declared inside a block {} canot be accessed from outside the block:</p>
+            <code>{</code><br>
+                <code>let x  = 5;</code><br>
+                <code>}</code><br>
+                <span id="span">// x cannot be used here</span>
+        </article>
+
+        <article>
+            <h2>Redeclaring Variables</h2>
+            <p>Redeclaring variable using the <code>var</code> keyword can impose problems.</p>
+            <p>Redeclaring a variable inside a block will also redeclare the variable outside the block:</p>
+            <div class="code">
+                <code>var x = 3;</code><br>
+                <span id="span">// Here x is 3</span><br>
+                <code>{</code><br>
+                <code>var x = 11;</code><br>
+                <span id="span">// Here x is 11</span><br>
+                <code>}</code><br>
+                <span id="span">Here x is 11</span>
+             </div>
+
+             <p>Redeclaring a variable using the <code>let</code> keyword can solve this problem.</p>
+            <p>Redeclaring a variable inside a block will not redeclare the variable outside the block.</p>
+
+            <div class="code">
+                <code>var x = 3;</code><br>
+                <span id="span">// Here x is 3</span><br>
+                <code>{</code><br>
+                <code>let x = 11;</code><br>
+                 <span id="span">// Here x is 11</span><br>
+                <code>}</code><br>
+                <span id="span">Here x is 3</span></div>                               
+        </article>
+
+        <article>
+            <h2>Browser Support</h2>
+            <p>The <code>let</code> keyword is not fully supported in IE 11 or earlier 🤣😹😆🍭😁... </p>
+        </article>
+
+        <article>
+            <h2>Loop Scope</h2>
+            <p>Using <code>var</code> in a loop:</p>
+            <div class="code">
+                <code>var i = 7;</code><br>
+                <code>for (var i = 0; i &lt; 10; i++) {</code><br>
+                    <span id="span">// some statements</span><br>
+                    <code>}</code><br>
+                    <span id="span">// Here i is 10</span>
+            </div>
+            <p>Using <code>let</code> in a loop:</p>
+            <div class="code">
+                <code>var i = 7;</code><br>
+                <code>for (let i = 0; i &lt; 10; i++) {</code><br>
+                    <span id="span">// some statements</span><br>
+                    <code>}</code><br>
+                    <span id="span">// Here i is 7</span>
+            </div>
+        </article>
+
+        <article>
+            <h2>Function Scope</h2>
+            <p>Variables declared with <code>var</code> and <code>let</code> are quite similar when declared inside a function. The will both have <strong>Function Scope</strong>.</p>
+
+            <div class="code">
+                <code>function myFunction() {</code><br>
+                    <code>var countryName = 'Iceland';</code> <span id="span">// Function Scope</span><br>
+                    <code>}</code><br>
+
+                    <code>function myFunction() {</code><br>
+                        <code>let countryName = 'Iceland';</code> <span id="span">// Function Scope</span><br>
+                        <code>}</code>
+            </div>
+        </article>
+
+        <article>
+            <h2>Global Scope</h2>
+            <p>Variables declared with <code>var</code> and <code>let</code> are similar when declared outside a block. They both have <strong>Global Scope</strong>:</p>
+        </article>
+
+        <article>
+            <h2>Global Variables in HTML</h2>
+            <p>With JS the gloabl scope is the JS environment.</p>
+            <p>In HTML, the global scope is the window object.</p>
+            <p>Global variables defined with the <code>var</code> keyword belong to the window object.</p>
+            <p>Gloabl variables defined with the <code>let</code> keyword do not belong to the window object</p>
+        </article>
+
+        <article>
+            <h2>Redeclaring</h2>
+            <p>Redeclaring a JS variable with <code>var</code> is allowed anywhere in the program</p>
+            <p>Redeclaring a <code>var</code> with <code>let</code> in the same scope or in the same block is not allowed.</p>
+        </article>
+
+        <article>
+            <h2>Hoisting</h2>
+            <p>Variables defined with <code>var</code> are <strong>hoisted</strong> to the top and can be initialized at any time, i.e. we can use the variable before it is declred.</p>
+
+            <p>Varibales defined with <code>let</code> are hoisted to the top of the block, but not initialized, i.e. the block of code is aware of the variable, but it cannot be used until it has been declared.</p>
+            <p>Using a <code>let</code> variable before it is declared will result in a <code>ReferenceError</code>.</p>
+            <p>The variable ios in a "temporal dead zone" from the start of the block until is is declared </p>
+
+        </article>
+
+    </main>
+    <footer>Footer</footer>
+    
+</body>
+</html>

@@ -83,10 +83,20 @@ header {
   margin: 1rem 0;
 }
 .main table,
+.main th,
 .main td {
   border: 1px solid #808080;
   border-collapse: collapse;
   padding: 0.5rem;
+}
+.main #span {
+  font-size: 1rem;
+  font-style: italic;
+}
+.main .code {
+  background-color: #fcfcfc;
+  width: 30vw;
+  padding: 1rem;
 }
 
 nav {
