@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>JS Functions</title>
+  </head>
+  <body>
+    <header>Functions</header>
+    <nav class="nav">
+      <div class="nav__container">
+        <div class="nav__container-left">
+          <ul>
+            <li><a href="../__index.html">Home</a></li>
+          </ul>
+        </div>
+        <div class="nav__container-right">
+          <ul>
+            <li><a href="3-output/output.html">JS-Practice</a></li>
+            <li>About</li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <aside>Aside</aside>
+    <main class="main">
+      <h1>JS Functions</h1>
+      <p>
+        A JS function is a block of code designed to perform a particular task.
+      </p>
+      <p>JS function is executed when 'something' invokes it</p>
+      <ul>
+        <li>JS Function Syntax</li>
+        <li>Function Invocation</li>
+        <li>Function Return</li>
+        <li>Why Functions?</li>
+        <li>The Operator Invokes the Functions</li>
+        <li>Functions Used as Variable Values</li>
+        <li>Local Variables</li>
+      </ul>
+
+      <div id="test"></div>
+
+      <script>
+        function myFunction(x, y) {
+          return x * y;
+        }
+        document.getElementById("test").innerHTML = myFunction(1, 45);
+      </script>
+
+      <article>
+        <h2>JS Function Syntax</h2>
+        <p>
+          A JS function id defined with the <code>function</code> keyword,
+          followed by a <strong>name</strong>, followed by parentheses ().
+        </p>
+        <p>
+          Function names can contain letters digits, underscores, and dollar
+          signs (same rules as variables).
+        </p>
+        <p>The parentheses may include parameter names separated by commas.</p>
+        <p>
+          Function <strong>parameters</strong> are listed inside the parentheses
+          () in the function definition.
+        </p>
+        <p>
+          Function <strong>arguments</strong> are the
+          <strong>values</strong> received by the function when it is invoked.
+        </p>
+        <p>Inside the function the arguments behave as local variables.</p>
+      </article>
+
+      <article>
+        <h2>Function Invocation</h2>
+        <p>
+          The code inside the function will execute when something
+          <strong>invokes</strong> the function:
+        </p>
+        <ul>
+          <li>When an event occurs</li>
+          <li>When it is onvoked from JS code</li>
+          <li>Automatically (self invoked)</li>
+        </ul>
+      </article>
+
+      <article>
+        <h2>Function Return</h2>
+        <p>
+          When JS reaches a <code>return</code> statement, the function will
+          stop executing.
+        </p>
+        <p>
+          If the function was invoked from a statement, JS will return to
+          execute the code after the invoking statement.
+        </p>
+      </article>
+
+      <article>
+        <h2>Why Functions?</h2>
+        <p>
+          We can reuse code, define the code once and use it many times with
+          different arguments to produce different results.
+        </p>
+
+        <p id="test2"></p>
+        <script>
+          function toCelsius(f) {
+            return Math.round((5 / 9) * (f - 32));
+          }
+          document.getElementById("test2").innerHTML = toCelsius(80);
+        </script>
+      </article>
+
+      <article>
+        <h2>The () Operator Invokes the Function</h2>
+        <p>
+          Using the name of the function refers to the function object and using
+          functionName() refers to the function result.
+        </p>
+        <p>
+          Accessing a function without () will return the function object
+          instead of the function result.
+        </p>
+      </article>
+
+      <article>
+        <h2>Functions Used as Variable Values</h2>
+        <p>
+          Functions can be used the same way as you use variables, in all types
+          of formulas, assignments and calculations.
+        </p>
+        <p id="test3"></p>
+        <script>
+          document.getElementById(
+            "test3"
+          ).innerHTML = `The temperature ${toCelsius(68)}&#8451; `;
+          function toCelsius(farenheit) {
+            return Math.floor((5 / 9) * (farenheit - 32));
+          }
+        </script>
+      </article>
+
+      <article>
+        <h1>Local Variables</h1>
+        <p>
+          Variables declared within JS function become <strong>local</strong> to
+          the function. Local variable can only be accessed from within the
+          function.
+        </p>
+      </article>
+    </main>
+    <footer>Footer</footer>
+  </body>
+</html>

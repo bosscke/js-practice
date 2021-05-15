@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>JS Objects</title>
+  </head>
+  <body>
+    <header>Objects</header>
+    <nav class="nav">
+      <div class="nav__container">
+        <div class="nav__container-left">
+          <ul>
+            <li><a href="../__index.html">Home</a></li>
+          </ul>
+        </div>
+        <div class="nav__container-right">
+          <ul>
+            <li><a href="3-output/output.html">JS-Practice</a></li>
+            <li>About</li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <aside></aside>
+    <main class="main">
+      <h1>JS Objects</h1>
+      <ul>
+        <li>Real Life Objects, Properties and Methods</li>
+        <li>JS Objects</li>
+        <li>Object Definition</li>
+        <li>Object Properties</li>
+        <li>Accessing Object Properties</li>
+        <li>Object Methods</li>
+        <li>The this Keyword</li>
+        <li>Accessing Object Methods</li>
+        <li>Do Not Declare Strings, Numbers and Booleans as Objects</li>
+      </ul>
+      <article>
+        <h2>Real Life Objects Properties and Methods</h2>
+        <table>
+          <tr>
+            <th>Object</th>
+            <th>Properties</th>
+            <th>Methods</th>
+          </tr>
+          <tr>
+            <td class="merge">Car</td>
+            <td>car.name = Nissan</td>
+            <td>car.start()</td>
+          </tr>
+          <tr>
+            <td class="merge">&nbsp;</td>
+            <td>car.model = Navara</td>
+            <td>car.drive()</td>
+          </tr>
+          <tr>
+            <td class="merge">&nbsp;</td>
+            <td>car.weight = 850kg</td>
+            <td>car.brake()</td>
+          </tr>
+          <tr>
+            <td class="merge">&nbsp;</td>
+            <td>car.white</td>
+            <td>car.stop()</td>
+          </tr>
+        </table>
+      </article>
+
+      <article>
+        <h2>JS Objects</h2>
+        <p>
+          Objects are variables, but objects can contain many values. The values
+          are written as <code>name:value</code> pairs.
+        </p>
+      </article>
+
+      <article>
+        <h2>Object Definition</h2>
+        <p>We define a JS object with an object literal:</p>
+        <div class="code">
+          <code
+            >var person = {<br />
+            firstName:"Hans",<br />
+            lastName:"Mustermann",<br />
+            age:60,<br />
+            eyeColor:"blue"}</code
+          >
+        </div>
+      </article>
+
+      <article>
+        <h2>Object Properties</h2>
+        <p>
+          The <strong>name:value</strong> pairs in JS objects are called
+          <strong>properties</strong>.
+        </p>
+        <table>
+          <tr>
+            <th>Property</th>
+            <th>Property Value</th>
+          </tr>
+          <tr>
+            <td>firstName</td>
+            <td>Hans</td>
+          </tr>
+        </table>
+      </article>
+
+      <article>
+        <h2>Accessing Object Properties</h2>
+        <p>We can access object properties in two ways:</p>
+        <ul>
+          <li>Dot Notation</li>
+          <li>Bracket Notation</li>
+        </ul>
+        <div class="code">
+          <code>objectName.propertyName</code><br />
+          <code>objectName["propertyName"]</code>
+        </div>
+      </article>
+
+      <article>
+        <h2>Object Methods</h2>
+        <p>
+          Objects can also have <strong>methods</strong>. Methods ae actions
+          performed on objects. Methods are stored in properties as
+          <strong>function definitions</strong>.
+        </p>
+        <table>
+          <tr>
+            <td>Property</td>
+            <th>Property Value</th>
+          </tr>
+          <tr>
+            <td>fullName</td>
+            <td>
+              <code
+                >function() {return this.firstName+ "" +this.lastName;}</code
+              >
+            </td>
+          </tr>
+        </table>
+      </article>
+
+      <article>
+        <h2>The this Keyword</h2>
+        <p>
+          In a function definition, <code>this</code> refers to the owner of the
+          function.
+        </p>
+        <p>This means the object.</p>
+      </article>
+
+      <article>
+        <h2>Accessing Object Methods</h2>
+        <p>We access object methods with:</p>
+        <div class="code">
+          <code>objectName.methodName()</code>
+          <code></code>
+        </div>
+      </article>
+
+      <article>
+        <h2>Do Not Declare Strings, Numbers and Booleans as Objects</h2>
+        <p>
+          When a JS variable is declared with the keyword <code>new</code> the
+          variable is created as object:
+        </p>
+
+        <div class="code">
+          <code>var x = new String();</code
+          ><span id="span"> // Declares x as a String object</span><br />
+          <code>var y = new Number();</code><br />
+          <code>var z = new Boolean();</code><br />
+        </div>
+        <p>
+          Try to avoid String, Number and Boolean objects. They complicate code
+          and slow down exection speed.
+        </p>
+      </article>
+    </main>
+    <footer>Footer</footer>
+  </body>
+</html>

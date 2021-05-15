@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>JS Data Types</title>
+</head>
+<body>
+    <header>Data Types</header>
+    <nav class="nav">
+        <div class="nav__container">
+            <div class="nav__container-left">
+                <ul>
+                    <li><a href="../__index.html">Home</a></li>                    
+                </ul>  
+            </div>
+            <div class="nav__container-right">
+                <ul>
+                    <li><a href="3-output/output.html">JS-Practice</a></li>
+                    <li>About</li>
+                </ul>
+            </div>
+        </div>       
+    </nav>
+    <aside>
+        Aside
+    </aside>
+    <main class="main">
+        <h1>JS Data Types</h1>
+        <ul>
+            <li>JS Data Types</li>
+            <li>The Concept of Data Types</li>
+            <li>JS Types are Dynamic</li>
+            <li>JS Strings</li>
+            <li>JS Numbers</li>
+            <li>JS Booleans</li>
+            <li>JS Arrays</li>
+            <li>JS Objects</li>
+            <li>The typeof Operator</li>
+            <li>Undefined</li>
+            <li>Empty Values</li>
+            <li>Null</li>
+            <li>Difference Between Undefined and Null</li>
+            <li>Primitive Data</li>
+            <li>Complex Data</li>
+        </ul>
+        <article>
+            <h2>JS Data Types</h2>
+            <p>JS variables can hold many <strong>data types</strong>: numbers, strings, objects an more.</p>
+        </article>
+        <article>
+            <h2>The Concept of Data Types</h2>
+            <p>In programming, data types is an important concept.</p>
+            <p>To be able to operate on variables, it is important to know something about the type.</p>
+            <p>JS evaluates expressions from left to right. Different sequences can produce different results.</p>
+        </article>
+
+        <article>
+            <h2>JS Types are Dynamic</h2>
+            <p>JS has dynamic types, this means that the same variable can be used to hold different data types.</p>
+        </article>
+
+        <article>
+            <h2>Js String</h2>
+            <p>A string is a series of characters like 'Hello'.</p>
+        </article>
+
+        <article>
+            <h2>JS Numbers</h2>
+            <p>JS has only one type of numbers. Numbers can be written with or without decimals</p>
+            <p>Extra large numbers can be written with scientific (exponential) notation.</p>
+
+            <div class="code">
+                <code>var y = 123e5;</code><span id="span"> // 12300000</span><br>
+                <code>var y = 123e-5;</code><span id="span"> // 0.00123</span>
+            </div>
+        </article>
+
+        <article>
+            <h2>JS Booleans</h2>
+            <p>Booleans can only have two values: <code>true</code> or <code>false</code>.</p>
+        </article>
+
+        <article>
+            <h2>JS Arrays</h2>
+            <p>JS arrays are written with square brackets, array itmes are separated by commas.</p>
+            <p>Arrays indexes are zero-based, which means the first item is [0], second is [1], etc..</p>
+        </article>
+
+        <article>
+            <h2>JS Objects</h2>
+            <p>JS Objects are written with curly braces { }.</p>
+            <p>Object properties are written as name:value pairs, separated by commas.</p>
+            <div class="code">
+                <code>var person = {<br>
+                    firstName:"Hans",<br> lastName:"Mustermann", age:60, <br>eyeColor:"blue"<br>};</code>
+            </div>
+        </article>
+
+        <article>
+            <h2>The typeof Operator</h2>
+            <p>We can use the JS <code>typeof</code> operator to find the type of JS variable</p>
+        </article>
+
+        <article>
+            <h2>Undefined</h2>
+            <p>In JS a variable without a value has the value of <code>undefined</code>. The type is also undefined.</p>
+        </article>
+
+        <article>
+            <h2>Empty Values</h2>
+            <p>An empty value is not undefined, it has both legal value and a type ('string').</p>
+        </article>
+
+        <article>
+                <h2>Null</h2>
+                <p>In JS null is 'nothing'. It is something that does not exist.</p>
+                <p>Unfortunately in JS the data type of <code>null</code> is an object.</p>
+                <p>It is considered a bug in JS that <code>typeof null</code> is an object, it should be <code>null</code>.</p>
+                <p>We can empty an object by setting it to <code>null</code> and also by setting it to  <code>undefined</code>.</p>
+        </article>
+
+        <article>
+            <h2>Difference Between Undefined an Null</h2>
+            <p><code>null</code> and <code>undefined</code> are equal in value but different in type.</p>
+        </article>
+        
+        <article>
+            <h2>Primitive Data</h2>
+            <p>A primitive data value is a single simple data value with no additional properties and methods.</p>
+            <p>The <code>typeof</code> operator can return one of these primitive types:</p>
+            <ul>
+                <li><code>string</code></li>
+                <li><code>number</code></li>
+                <li><code>boolean</code></li>
+                <li><code>undefined</code></li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>Complex Data</h2>
+            <p>The <code>typeof</code> operator can return one of two complex types:</p>
+            <ul>
+                <li><code>function</code></li>
+                <li><code>object</code></li>
+            </ul>
+            <p>The <code>typeof</code> operator returns "object" for objects, arrays and null.</p>
+            <p>The <code>typeof</code> operator does not return "object" for functions.</p>
+        </article>
+    </main>
+    <footer>Footer</footer>
+    
+</body>
+</html>
