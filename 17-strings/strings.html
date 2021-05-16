@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>JS Strings</title>
+  </head>
+  <body>
+    <header>Strings</header>
+    <nav class="nav">
+      <div class="nav__container">
+        <div class="nav__container-left">
+          <ul>
+            <li><a href="../__index.html">Home</a></li>
+          </ul>
+        </div>
+        <div class="nav__container-right">
+          <ul>
+            <li><a href="3-output/output.html">JS-Practice</a></li>
+            <li>About</li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <aside>Aside</aside>
+    <main class="main">
+      <h1>Js Strings</h1>
+      <p>
+        JS strings are used for storing and manipulating text. A JS string is
+        zero or more characters written inside quotes.
+      </p>
+      <ul>
+        <li>String Length</li>
+        <li>Escape Character</li>
+        <li>Breaking Long Code Lines</li>
+        <li>Strings Can be Objects</li>
+      </ul>
+
+      <article>
+        <h2>String Length</h2>
+        <p>
+          To fing the length of the string use the built-in
+          <code>length</code> property.
+        </p>
+      </article>
+
+      <article>
+        <h2>Escape Character</h2>
+        <p>
+          Bcoz strings must be written in quotes JS will misunderstand this
+          string.
+        </p>
+        <div class="code">
+          <code>var x = "We are the so-called "Spartans" from Prague" 🤣</code>
+        </div>
+        <p>The string will be chopped to "We are the so called".</p>
+        <p>
+          The solution to avoid this problem, is to use the
+          <strong>backslash escape character</strong>.
+        </p>
+        <p>
+          The backslash (\) escape character turns speacial characters into
+          string chracters:
+        </p>
+        <table>
+          <tr>
+            <th>Code</th>
+            <th>Result</th>
+          </tr>
+          <tr>
+            <td>\'</td>
+            <td>'</td>
+          </tr>
+          <tr>
+            <td>\"</td>
+            <td>"</td>
+          </tr>
+          <tr>
+            <td>\\</td>
+            <td>\</td>
+          </tr>
+        </table>
+        <br />
+        <div class="code">
+          <code
+            >var x = "We are the so-called \"Spartans\" from Prague" 🤣</code
+          >
+        </div>
+        <p>Six other escape sequences are valid in JS.</p>
+        <table>
+          <tr>
+            <th>Code</th>
+            <th>Result</th>
+          </tr>
+          <tr>
+            <td>\b</td>
+            <td>Backspace</td>
+          </tr>
+          <tr>
+            <td>\f</td>
+            <td>Form Feed</td>
+          </tr>
+          <tr>
+            <td>\n</td>
+            <td>New Line</td>
+          </tr>
+          <tr>
+            <td>\r</td>
+            <td>Carriage Return</td>
+          </tr>
+          <tr>
+            <td>\t</td>
+            <td>Horizontal Tabulator</td>
+          </tr>
+          <tr>
+            <td>\v</td>
+            <td>Vertical Tabulator</td>
+          </tr>
+        </table>
+        <p>
+          These escape characters were originally designed to control
+          typewriters, tleltypes and faxmachines. They do not make sense in
+          HTML.
+        </p>
+      </article>
+
+      <article>
+        <h2>Breaking Long Code Lines</h2>
+        <p>
+          For best readability programmers often like to avoid code lines longer
+          that 80 characters.
+        </p>
+        <p>
+          If a JS statement does not fit on one line, the best place to break it
+          is after an operator:
+        </p>
+        <div class="code">
+          <code
+            >document.getElementById('test').innerHTML = \<br />
+            "Hello buddy!"</code
+          >
+        </div>
+      </article>
+
+      <article>
+        <h2>Strings Can be Objects</h2>
+        <p>Normally JS strings are primitive values created from literals.</p>
+        <p>
+          But strings can also be defined as objects with the keyword
+          <code>new</code>. Do not create strings as objects, it slows down
+          execution speed.
+        </p>
+      </article>
+    </main>
+    <footer>Footer</footer>
+  </body>
+</html>

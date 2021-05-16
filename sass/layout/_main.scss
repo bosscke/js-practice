@@ -24,7 +24,12 @@
   }
   .code {
     background-color: $base-color;
-    width: 30vw;
+    width: 40vw;
+    padding: $standard-padding-full;
+  }
+  .example {
+    background-color: $base2-color;
+    width: 40vw;
     padding: $standard-padding-full;
   }
 }

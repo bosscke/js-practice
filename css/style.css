@@ -98,7 +98,12 @@ header {
 }
 .main .code {
   background-color: #fcfcfc;
-  width: 30vw;
+  width: 40vw;
+  padding: 1rem;
+}
+.main .example {
+  background-color: #808080;
+  width: 40vw;
   padding: 1rem;
 }
 

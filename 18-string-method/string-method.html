@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Js String Method</title>
+  </head>
+  <body>
+    <header>String Method</header>
+    <nav class="nav">
+      <div class="nav__container">
+        <div class="nav__container-left">
+          <ul>
+            <li><a href="../__index.html">Home</a></li>
+          </ul>
+        </div>
+        <div class="nav__container-right">
+          <ul>
+            <li><a href="3-output/output.html">JS-Practice</a></li>
+            <li>About</li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <aside>Aside</aside>
+    <main class="main">
+      <h1>JS String Methods</h1>
+      <p>String methods help us to work with strings.</p>
+
+      <ul>
+        <li>String Methods and Properties</li>
+        <li>String Length</li>
+        <li>Finding a String</li>
+        <li>Searching for a string in a String</li>
+        <li>Did you notice?</li>
+        <li>Extracting Parts</li>
+        <li>The slice() Method</li>
+        <li>The substring() Method</li>
+        <li>The substr() Method</li>
+        <li>Replacing string Content</li>
+        <li>Converting to Upper and Lower Case</li>
+        <li>The concat() Method</li>
+        <li>String.trim()</li>
+        <li>JS String Padding</li>
+        <li>Extracting String Characters</li>
+        <li>The charAt() Method</li>
+        <li>The charCodeAt() Method</li>
+        <li>Property Access</li>
+        <li>Converting a String to an Array</li>
+      </ul>
+
+      <article>
+        <h2>String Methods and Properties</h2>
+        <p>
+          Primitive values like "Hans Mustermann" cannot have properties or
+          methods(bcoz they are not objects).
+        </p>
+        <p>
+          But with JS methods and properties are also available to primitive
+          values bcoz JS treats primitive values as objects when executing
+          methods and properties.
+        </p>
+
+        <div class="example">
+          <p id="test"></p>
+        </div>
+      </article>
+
+      <article>
+        <h2>Find a String in a String</h2>
+        <p>
+          The <code>indexOf()</code> method returns the index of the position of
+          the <strong>first </strong>occurence of a specified text in astring.
+        </p>
+        <div class="example">
+          <p id="test2"></p>
+        </div>
+        <p>
+          The <code>lastIndexOf()</code> method returns the index of the
+          <strong>last</strong> occurence of a specific text in a string:
+        </p>
+        <p>Both return -1 if the text is not found</p>
+        <div class="example">
+          <p id="test3"></p>
+        </div>
+      </article>
+
+      <article>
+        <h2>Searching for a String in a String</h2>
+        <p>
+          The <code>search()</code> method searches a string for a specified
+          value and returns the position of the match
+        </p>
+        <div class="example">
+          <p id="test4"></p>
+        </div>
+      </article>
+
+      <article>
+        <h2>Did you Notice?</h2>
+        <p>
+          The two methods, <code>indexOf()</code> and <code>search()</code> are
+          <strong>equal</strong>?
+        </p>
+        <p>
+          They accept same arguments(parameters), and return the same value?
+        </p>
+        <p>THe two methods are NOT equal, these are the differences</p>
+        <ul>
+          <li>
+            The <code>search()</code> method cannot take a second start position
+            argument.
+          </li>
+          <li>
+            The<code>indexOf()</code> method cannot take powerful search values
+            (regular expressions)
+          </li>
+        </ul>
+      </article>
+    </main>
+    <footer>Footer</footer>
+    <script src="script.js"></script>
+  </body>
+</html>
