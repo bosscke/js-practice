@@ -111,13 +111,72 @@
         <ul>
           <li>
             The <code>search()</code> method cannot take a second start position
-            argument.
+            argument
           </li>
           <li>
-            The<code>indexOf()</code> method cannot take powerful search values
+            The <code>indexOf()</code> method cannot take powerful search values
             (regular expressions)
           </li>
         </ul>
+      </article>
+      <article>
+        <h2>Extracting String Parts</h2>
+        <p>There are 3 methods for extracting a part of a string:</p>
+        <ul>
+          <li><code>slice(start, end)</code></li>
+          <li><code>substring(start, end)</code></li>
+          <li><code>substr(start, length)</code></li>
+        </ul>
+      </article>
+      <article>
+        <h2>The slice() Method</h2>
+        <p>
+          <code>slice()</code> extracts a part of a string and returns the
+          extracted part in a new string.
+        </p>
+        <p>
+          The method takes two parameters: the start position and the end
+          position (end not included).
+        </p>
+        <p>
+          If we omit the the second parameter the method will slice out the rest
+          ot the string. If the parameter is negative the position is counted
+          from the end of the string.
+        </p>
+        <div class="example">
+          <p id="test5"></p>
+          <p id="test6"></p>
+          <p id="test7"></p>
+        </div>
+      </article>
+
+      <article>
+        <h2>The subtring() Method</h2>
+        <p><code>substring()</code> is similar to <code>slice()</code>.</p>
+        <p>
+          The difference is that the substring cannot accept negative indexes!
+        </p>
+      </article>
+
+      <article>
+        <h2>The substr() Method</h2>
+        <p>
+          <code>substr()</code> is simila to <code>slice()</code>. The
+          difference is that the second parameter specifies the length of the
+          extracted part.
+        </p>
+      </article>
+
+      <article>
+        <h3>Replacing String Content</h3>
+        <p>
+          The <code>replace()</code>method replaces a specified value with
+          another value in a string.
+        </p>
+        <div class="example">
+          <p id="test8">Visit our Restaurant.</p>
+          <button onclick="myFunction()">Wanna have fun</button>
+        </div>
       </article>
     </main>
     <footer>Footer</footer>

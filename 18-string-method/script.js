@@ -21,7 +21,30 @@ document.getElementById("test3").innerHTML = pos1;
 
 ///////////////////////////////////
 // SEARCH
-
 var str = "Please locate where 'locate' occurs!";
 var pos = str.search("locate");
 document.getElementById("test4").innerHTML = pos;
+
+///////////////////////////////////
+// slice()
+
+var str = "Apple, Banana, Kiwi";
+var res = str.slice(7, 13);
+document.getElementById("test5").innerHTML = res;
+
+var str = "Apple, Banana, Kiwi";
+var res = str.slice(7);
+document.getElementById("test6").innerHTML = res;
+
+var str = "Apple, Banana, Kiwi";
+var res = str.slice(-20, -13);
+document.getElementById("test7").innerHTML = res;
+
+///////////////////////////////////
+// replace()
+
+function myFunction() {
+  var str = document.getElementById("test8").innerHTML;
+  var txt = str.replace("Restaurant.", "Night Club! 🤟🏻");
+  document.getElementById("test8").innerHTML = txt;
+}
