@@ -48,3 +48,21 @@ function myFunction() {
   var txt = str.replace("Restaurant.", "Night Club! 🤟🏻");
   document.getElementById("test8").innerHTML = txt;
 }
+
+///////////////////////////////////
+// charAt()
+
+var str = "Hello World";
+document.getElementById("test9").innerHTML = str.charAt(4);
+
+///////////////////////////////////
+// split()
+
+var str = "Hello";
+var arr = str.split("");
+var text = "";
+var i;
+for (i = 0; i < arr.length; i++) {
+  text = text + arr[i] + "<br>";
+}
+document.getElementById("test10").innerHTML = text;
