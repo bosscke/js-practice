@@ -37,7 +37,110 @@
         <li>Hexadecimal</li>
         <li>Numbers can be Objects</li>
       </ul>
+
+      <article>
+        <h2>JS Numbers are Always 64-bit Floating Point</h2>
+        <p>
+          Unlike many other programming languages JS does not define different
+          types of numbers, like integers, short, long, floating-points.
+        </p>
+        <p>
+          JS numbers are always stored a double precision floating point
+          numbers, following international IEEE 754 standard.
+        </p>
+      </article>
+
+      <article>
+        <h1>Precision</h1>
+        <p>Integers are accurate up to 15 digits.</p>
+        <p>The max number of decimals is 17.</p>
+      </article>
+
+      <article>
+        <h2>Adding Numbers and Strings</h2>
+        <p>Adding two numbers will be a number.</p>
+        <p>Adding two strings will be a string concatenation.</p>
+        <p>Adding a number and a string will be a string concatanation.</p>
+      </article>
+
+      <article>
+        <h2>Numeric Strings</h2>
+        <p>JS strings can have numeric content.</p>
+        <p>
+          JS will try to convert strings to numbers in all numeric operations
+          (except addition will not work as expected).
+        </p>
+      </article>
+
+      <article>
+        <h2>NaN - Not a Number</h2>
+        <p>
+          <code>NaN</code> is a JS reserved word indicating that a number is not
+          a legal number.
+        </p>
+        <p>
+          trying to do arithmetic with a non-numeric string will result in
+          <code>NaN</code>.
+        </p>
+        <p>
+          However if the string contains a numeric value the result will be a
+          number.
+        </p>
+        <p>
+          We can use <code>isNaN()</code> to find out if a value is a number.
+        </p>
+      </article>
+
+      <article>
+        <h2>Infinity</h2>
+        <p>
+          <code>Infinity</code> or <code>-Infinity</code> is the value JS will
+          return if you calculate a number outside the largest possible number.
+        </p>
+      </article>
+
+      <article>
+        <h2>Hexadecimal</h2>
+        <p>
+          JS interprets numeric constants as hexadecimal if they are preceded by
+          0x.
+        </p>
+        <div class="code">
+          <code>var x = 0xFF;</code><span id="span"> // x will be 255</span>
+        </div>
+        <p>Never write a number with a leading zero (like 07).</p>
+        <p>
+          Some JS versions interpret numbers as octal if theyare written with a
+          leading zero.
+        </p>
+        <p>
+          By default JS disdplays numbers as <strong>10 base</strong> decimals.
+        </p>
+        <p>
+          Bu we can use the <code>toString()</code> method to output numbers
+          from <strong>base 2</strong> to <strong>base 36</strong>.
+        </p>
+        <p>
+          Hexadecimal is <strong>base 16</strong>. Decimal is
+          <strong>base 10</strong>. Octal is <strong>base 8</strong>. Binary is
+          <strong>base 2</strong>.
+        </p>
+
+        <div class="code">
+          <p id="test"></p>
+        </div>
+      </article>
+
+      <article>
+        <h2>Numbers Can be Objects</h2>
+        <p>Normally JS numbers are primitive values created from literals.</p>
+        <p>
+          But numbers can also be defined as objects with the keyword
+          <code>new</code>. It is not recommanded to create Number objects.
+        </p>
+      </article>
     </main>
     <footer>Footer</footer>
+    <script src="script.js"></script>
   </body>
 </html>
