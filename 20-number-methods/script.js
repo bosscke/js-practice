@@ -32,3 +32,15 @@ document.getElementById("test2").innerHTML =
 
 var x = new Date("2020-05-21");
 document.getElementById("test3").innerHTML = Number(x);
+
+//////////////////////////////////////////
+// MAX_VALUE
+
+var x = Number.MAX_VALUE;
+document.getElementById("test4").innerHTML = x;
+
+//////////////////////////////////////////
+// MIN_VALUE
+
+var x = Number.MIN_VALUE;
+document.getElementById("test5").innerHTML = x;
