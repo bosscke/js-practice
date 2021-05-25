@@ -44,3 +44,11 @@ document.getElementById("test4").innerHTML = x;
 
 var x = Number.MIN_VALUE;
 document.getElementById("test5").innerHTML = x;
+//////////////////////////////////////////
+// POSITIVE_INFINITY
+
+var x = Number.POSITIVE_INFINITY;
+document.getElementById("test6").innerHTML = x;
+
+//////////////////////////////////////////
+// NEGATIVE_INFINITY
