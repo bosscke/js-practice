@@ -28,3 +28,18 @@ document.getElementById("test3").innerHTML = cars[0];
 
 var carSubName = { nissan: "Navara", ferrari: "Enzo", ford: "Mustang" };
 document.getElementById("test4").innerHTML = carSubName.nissan;
+////////////////////////////////////////
+// for loop
+
+var fruits, text, fLen, i;
+
+fruits = ["Banana", "Orange", "Apple", "Mango"];
+fLen = fruits.length;
+
+text = "<ul>";
+for (i = 0; i < fLen; i++) {
+  text += "<li>" + fruits[i] + "</li>";
+}
+text += "</ul>";
+
+document.getElementById("test5").innerHTML = text;
