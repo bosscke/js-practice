@@ -43,3 +43,16 @@ for (i = 0; i < fLen; i++) {
 text += "</ul>";
 
 document.getElementById("test5").innerHTML = text;
+
+////////////////////////////////////////
+// Adding array
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("test6").innerHTML = fruits;
+
+function myFunction() {
+  fruits.push("Lemon");
+  document.getElementById("test6").innerHTML = fruits;
+}
+
+myFunction();
