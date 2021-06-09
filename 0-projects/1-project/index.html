@@ -7,6 +7,17 @@
     <title>Game</title>
   </head>
   <body>
-    <script src="main.js"></script>
+    <section id="game_div"></section>
+    <footer></footer>
+    <script type="text/javascript" src="./flashcard_QA.json"></script>
+    <script type="text/javascript" src="./main.js"></script>
+    <script>
+      (function () {
+        var myGame = new Game("game_div", {
+          game: "flashcard",
+          data: flashcard_QA,
+        });
+      })();
+    </script>
   </body>
 </html>
