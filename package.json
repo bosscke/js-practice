@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "sass": "sass sass/main.scss css/style.css -w",
-    "devServer":"live-server",
-    "start": "concurrently \"sass sass/main.scss css/style.css -w\" \"live-server\""
+    "devServer": "live-server",
+    "start": "concurrently \"sass sass/main.scss css/style.css -w\" \"live-server --browser=\"chrome\""
   },
   "author": "bosscke",
   "license": "ISC",
