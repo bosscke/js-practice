@@ -5,8 +5,7 @@ const projectMake = new projectTemplete(
   "Make stuff happen",
   "Stuff is happening",
   "Being busy",
-  "November 1, 2020, 11:00",
-  "August 1, 2021, 11:00",
+  "March 7, 2021, 11:00",
   true
 );
 
@@ -22,9 +21,8 @@ const content = `
             <li>Phase: ${projectMake.phase}</li>
             <li>Activity: ${projectMake.activity}</li>
             <li>Start: ${projectMake.start}</li>
-            <li>End: ${projectMake.end}</li>
             <li>Active: ${projectMake.active}</li>
-            <li>Duration: ${projectMake.duration()} months</li>
+            <li>Duration: ${projectMake.duration()} days</li>
         </dl>
         
     
