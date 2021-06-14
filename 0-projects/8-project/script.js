@@ -21,3 +21,5 @@ console.log("multiplication:", multiplication(11, 15));
   let c = add(a, b);
   console.log(`The sum of a nd b is: ${c}`);
 })();
+
+// The arrow function
