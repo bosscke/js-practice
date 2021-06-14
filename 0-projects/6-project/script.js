@@ -31,11 +31,19 @@ const content = `
 
 const h1 = `<h1>ITIL_v3</h1>`;
 
+const menu = `<ul>
+<li>Service</li>
+<li>About</li>
+</ul>`;
+
 const newHeader = document.createElement("header");
+const newNav = document.createElement("nav");
 
 newHeader.innerHTML = h1;
 main.innerHTML = content;
-header.prepend(newHeader);
+newNav.innerHTML = menu;
 
+header.prepend(newHeader);
+header.insertAdjacentElement(newNav);
 document.querySelector("section").style.display = "grid";
 document.querySelector("section").style.justifyContent = "center";
