@@ -1,0 +1,42 @@
+html {
+  font-family: monospace;
+}
+body {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.new-contact,
+.contacts {
+  padding: 20px;
+}
+.new-contact {
+  background: #ccc;
+}
+
+.contacts {
+  background-color: lightcoral;
+}
+
+h1 {
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+}
+
+li {
+  border-bottom: 1px solid white;
+}
+
+li:last-child {
+  border: none;
+}
+
+button {
+  margin: 10 0 10 0;
+}
+
+div {
+  margin-bottom: 10px;
+}
