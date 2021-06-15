@@ -43,9 +43,7 @@ window.onload = () => {
     };
 
     let transaction = db.transaction(["contacts"], "readwrite");
-
     let objectStore = transaction.objectStore("contacts");
-
     let request = objectStore.add(newItem);
 
     request.onsuccess = () => {
@@ -88,6 +86,8 @@ window.onload = () => {
         listItem.appendChild(deleteButton);
         deleteButton.textContent = "Delete";
 
+        deleteButton.onclick = deleteItem;
+
         cursor.continue();
       } else {
         if (!list.firstChild) {
@@ -102,5 +102,21 @@ window.onload = () => {
 
   function deleteItem(e) {
     let contactId = Number(e.target.parentNode.getAttribute("data-contact-id"));
+
+    let transaction = db.transaction(["contacts"], "readwrite");
+    let objectStore = transaction.objectStore("contacts");
+    let request = objectStore.delete(contactId);
+
+    transaction.oncomplete = () => {
+      e.target.parentNode.parentNode.removeChild(e.target.parentNode);
+
+      console.log(`Contact ${contactId} is deleted`);
+
+      if (!list.firstChild) {
+        let listItem = document.createElement("li");
+        listItem.textContent = "No contacts store.";
+        list.appendChild(listItem);
+      }
+    };
   }
 };
