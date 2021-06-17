@@ -2,6 +2,7 @@ import projectTemplete from "./project-template.js";
 
 const projectMake = new projectTemplete(
   "Make",
+  "October 30, 2020, 11:00",
   "Make stuff happen",
   "Stuff is happening",
   "Being busy",
@@ -16,13 +17,16 @@ const content = `
         <h1>${projectMake.project_name}</h1>
         
        <p> Project Name: ${projectMake.project_name}</p>
-       <dl>
+       <dl> 
+            <li>Initialized: ${projectMake.init()}</li>
             <li>Description: ${projectMake.description}</li>
             <li>Phase: ${projectMake.phase}</li>
             <li>Activity: ${projectMake.activity}</li>
             <li>Start: ${projectMake.start}</li>
             <li>Active: ${projectMake.active}</li>
             <li>Duration: ${projectMake.duration()} days</li>
+            <li>Duration: ${projectMake.durationWeeks()} weeks</li>
+            <li>Duration: ${projectMake.durationMonths()} months</li>
         </dl>
         
     

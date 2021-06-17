@@ -1,0 +1,48 @@
+nav {
+  background-color: $base-color;
+  grid-row: 2 / 3;
+  grid-column: 1 / 13;
+  padding: $standard-padding;
+}
+
+.cobit__nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-bottom: 1px solid $base2-color;
+  &--left {
+    display: grid;
+    align-items: center;
+    background-color: $base-color;
+    // padding: $standard-padding;
+    ul {
+      list-style-type: none;
+      list-style-position: inside;
+    }
+    li {
+      display: inline;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+
+  &--right {
+    display: grid;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: $base-color;
+    padding: $standard-padding;
+
+    ul {
+      list-style-type: none;
+      list-style-position: inside;
+    }
+    li {
+      display: inline;
+      margin-right: 3rem;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+}

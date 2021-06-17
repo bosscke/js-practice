@@ -1,0 +1,11 @@
+footer {
+  background-color: $base2-color;
+  grid-row: 4 / 5;
+  grid-column: 1 / 13;
+  padding: $standard-padding;
+}
+
+.cobit__footer {
+  display: grid;
+  justify-content: center;
+}

@@ -1,0 +1,12 @@
+main {
+  background-color: crimson;
+  grid-row: 3/ 4;
+  grid-column: 2 / 13;
+  padding: $standard-padding;
+}
+
+.cobit__main {
+  padding: $standard-padding;
+  display: grid;
+  justify-content: center;
+}

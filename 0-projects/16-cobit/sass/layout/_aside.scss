@@ -1,0 +1,18 @@
+aside {
+  background-color: $base3-color;
+  grid-row: 3/ 4;
+  grid-column: 1 / 2;
+  padding: $standard-padding;
+}
+
+.cobit__aside {
+  ul {
+    list-style-position: inside;
+  }
+  li {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+  }
+}
