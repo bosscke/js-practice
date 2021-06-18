@@ -12,4 +12,10 @@ main {
   ul {
     padding: $standard-padding;
   }
+  dl {
+    margin: $standard-padding 0;
+  }
+  dt {
+    font-weight: bold;
+  }
 }

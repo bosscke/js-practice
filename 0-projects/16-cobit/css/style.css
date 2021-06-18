@@ -17,6 +17,15 @@ body {
   font-size: 1rem;
 }
 
+.governance a {
+  text-decoration: none;
+  color: black;
+}
+
+.cobit__main dl {
+  font-family: Arial;
+}
+
 body {
   background-color: #fcfcfc;
   display: grid;
@@ -114,6 +123,12 @@ main {
 .cobit__main ul {
   padding: 1rem;
 }
+.cobit__main dl {
+  margin: 1rem 0;
+}
+.cobit__main dt {
+  font-weight: bold;
+}
 
 footer {
   background-color: #808080;
@@ -192,11 +207,17 @@ footer {
   grid-column: 1/5;
   z-index: 2;
 }
+.governance__edm01:hover {
+  background-color: crimson;
+}
 .governance__edm02 {
   background-color: #808080;
   grid-row: 1/3;
   grid-column: 7/11;
   z-index: 2;
+}
+.governance__edm02:hover {
+  background-color: crimson;
 }
 .governance__edm03 {
   background-color: #808080;
