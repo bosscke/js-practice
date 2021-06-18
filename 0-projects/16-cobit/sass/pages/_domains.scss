@@ -9,13 +9,13 @@
     // justify-content: center; // not working when there is not enough space !!
     text-align: center;
     align-items: center;
-    background-color: $base-color;
+    background-color: $base2-color;
   }
   &__management-objectives {
     display: grid;
     justify-content: center;
     align-items: center;
-    background-color: $base-color;
+    background-color: $base2-color;
     grid-row: 1/ 1;
     grid-column: 2/ 6;
   }
@@ -34,27 +34,27 @@
     // justify-content: center;
     text-align: center;
     align-items: center;
-    background-color: $base-color;
+    background-color: $base2-color;
   }
   &__bai {
     display: grid;
     // justify-content: center;
     text-align: center;
     align-items: center;
-    background-color: $base-color;
+    background-color: $base2-color;
   }
   &__dss {
     display: grid;
     // justify-content: center;
     text-align: center;
     align-items: center;
-    background-color: $base-color;
+    background-color: $base2-color;
   }
   &__mea {
     display: grid;
     // justify-content: center;
     text-align: center;
     align-items: center;
-    background-color: $base-color;
+    background-color: $base2-color;
   }
 }

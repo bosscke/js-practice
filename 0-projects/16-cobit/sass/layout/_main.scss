@@ -1,5 +1,5 @@
 main {
-  background-color: crimson;
+  background-color: $base-color;
   grid-row: 3/ 4;
   grid-column: 2 / 13;
   padding: $standard-padding;
@@ -9,4 +9,7 @@ main {
   padding: $standard-padding;
   display: grid;
   justify-content: center;
+  ul {
+    padding: $standard-padding;
+  }
 }
