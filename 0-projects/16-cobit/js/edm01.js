@@ -49,4 +49,3 @@ const content = `
 `;
 
 main.innerHTML = content;
-console.log(getTheTitle);

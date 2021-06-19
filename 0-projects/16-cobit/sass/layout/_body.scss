@@ -2,5 +2,5 @@ body {
   background-color: $base-color;
   display: grid;
   grid-template-rows: 10vh max-content max-content repeat(3, max-content);
-  grid-template-columns: repeat(12, 1fr); // 12 equal columns
+  grid-template-columns: minmax(min-content, max-content); // 12 equal columns
 }
