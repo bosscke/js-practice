@@ -284,6 +284,9 @@ footer {
   grid-column: 13/17;
   z-index: 2;
 }
+.governance__apo04:hover {
+  background-color: crimson;
+}
 .governance__apo05 {
   background-color: rgba(128, 128, 128, 0.5);
   grid-row: 3/5;
@@ -299,11 +302,17 @@ footer {
   grid-column: 21/25;
   z-index: 2;
 }
+.governance__apo06:hover {
+  background-color: crimson;
+}
 .governance__apo07 {
   background-color: #808080;
   grid-row: 3/5;
   grid-column: 25/29;
   z-index: 2;
+}
+.governance__apo07:hover {
+  background-color: crimson;
 }
 .governance__apo08 {
   background-color: #808080;
@@ -311,11 +320,17 @@ footer {
   grid-column: 1/5;
   z-index: 2;
 }
+.governance__apo08:hover {
+  background-color: crimson;
+}
 .governance__apo09 {
   background-color: #808080;
   grid-row: 5/7;
   grid-column: 5/9;
   z-index: 2;
+}
+.governance__apo09:hover {
+  background-color: crimson;
 }
 .governance__apo10 {
   background-color: #808080;
@@ -323,11 +338,17 @@ footer {
   grid-column: 9/13;
   z-index: 2;
 }
+.governance__apo10:hover {
+  background-color: crimson;
+}
 .governance__apo11 {
   background-color: rgba(128, 128, 128, 0.5);
   grid-row: 5/7;
   grid-column: 13/17;
   z-index: 2;
+}
+.governance__apo11:hover {
+  background-color: crimson;
 }
 .governance__apo12 {
   background-color: #808080;
@@ -335,11 +356,17 @@ footer {
   grid-column: 17/21;
   z-index: 2;
 }
+.governance__apo12:hover {
+  background-color: crimson;
+}
 .governance__apo13 {
   background-color: #808080;
   grid-row: 5/7;
   grid-column: 21/25;
   z-index: 2;
+}
+.governance__apo13:hover {
+  background-color: crimson;
 }
 .governance__apo14 {
   background-color: #808080;
@@ -347,11 +374,17 @@ footer {
   grid-column: 25/29;
   z-index: 2;
 }
+.governance__apo14:hover {
+  background-color: crimson;
+}
 .governance__bai01 {
   background-color: #808080;
   grid-row: 7/9;
   grid-column: 1/5;
   z-index: 2;
+}
+.governance__bai01:hover {
+  background-color: crimson;
 }
 .governance__bai02 {
   background-color: #808080;
@@ -359,11 +392,17 @@ footer {
   grid-column: 5/9;
   z-index: 2;
 }
+.governance__bai02:hover {
+  background-color: crimson;
+}
 .governance__bai03 {
   background-color: #808080;
   grid-row: 7/9;
   grid-column: 9/13;
   z-index: 2;
+}
+.governance__bai03:hover {
+  background-color: crimson;
 }
 .governance__bai04 {
   background-color: #808080;
