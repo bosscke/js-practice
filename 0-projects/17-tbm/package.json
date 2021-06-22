@@ -1,0 +1,16 @@
+{
+  "name": "16-project",
+  "version": "1.0.0",
+  "description": "COBIT 2019 processes",
+  "main": "script.js",
+  "scripts": {
+    "sass": "sass sass/main.scss css/style.css -w",
+    "devServer": "live-server",
+    "start": "concurrently \"sass sass/main.scss css/style.css -w\" \"live-server --browser=\"chrome\""
+  },
+  "author": "bosscke",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "1.32.12"
+  }
+}

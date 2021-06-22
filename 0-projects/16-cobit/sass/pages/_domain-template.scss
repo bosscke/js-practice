@@ -1,0 +1,83 @@
+.card {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  &__domain {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    padding: $standard-padding;
+    & > p {
+      background-color: burlywood;
+    }
+
+    &--text {
+      padding-left: $standard-padding;
+    }
+  }
+  &__governance-objective {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    padding: $standard-padding;
+    & > p {
+      background-color: burlywood;
+    }
+    &--text {
+      padding-left: $standard-padding;
+    }
+  }
+  &__description {
+    border-bottom: 1px solid #ccc;
+    padding: $standard-padding;
+
+    & > p {
+      background-color: burlywood;
+    }
+  }
+  &__purpose {
+    border-bottom: 1px solid #ccc;
+    padding: $standard-padding;
+    & > p {
+      background-color: burlywood;
+    }
+  }
+  &__goals {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    padding: $standard-padding;
+
+    &-enterprise-goals {
+      border-right: 1px solid #ccc;
+      padding-right: $standard-padding;
+      flex-basis: 50%;
+      & > p {
+        background-color: burlywood;
+      }
+    }
+    &-alignment-goals {
+      padding-left: $standard-padding;
+      flex-basis: 50%;
+      & > p {
+        background-color: burlywood;
+      }
+    }
+  }
+  &__framework {
+    display: flex;
+    padding: $standard-padding;
+    &-related-guidance {
+      border-right: 1px solid #ccc;
+      padding-right: $standard-padding;
+      flex-basis: 50%;
+      & > p {
+        background-color: burlywood;
+      }
+    }
+    &-detailed-reference {
+      padding-left: $standard-padding;
+      flex-basis: 50%;
+      & > p {
+        background-color: burlywood;
+      }
+    }
+  }
+}

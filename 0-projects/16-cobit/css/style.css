@@ -200,6 +200,87 @@ footer {
   background-color: #808080;
 }
 
+.card {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+.card__domain {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  padding: 1rem;
+}
+.card__domain > p {
+  background-color: burlywood;
+}
+.card__domain--text {
+  padding-left: 1rem;
+}
+.card__governance-objective {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  padding: 1rem;
+}
+.card__governance-objective > p {
+  background-color: burlywood;
+}
+.card__governance-objective--text {
+  padding-left: 1rem;
+}
+.card__description {
+  border-bottom: 1px solid #ccc;
+  padding: 1rem;
+}
+.card__description > p {
+  background-color: burlywood;
+}
+.card__purpose {
+  border-bottom: 1px solid #ccc;
+  padding: 1rem;
+}
+.card__purpose > p {
+  background-color: burlywood;
+}
+.card__goals {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  padding: 1rem;
+}
+.card__goals-enterprise-goals {
+  border-right: 1px solid #ccc;
+  padding-right: 1rem;
+  flex-basis: 50%;
+}
+.card__goals-enterprise-goals > p {
+  background-color: burlywood;
+}
+.card__goals-alignment-goals {
+  padding-left: 1rem;
+  flex-basis: 50%;
+}
+.card__goals-alignment-goals > p {
+  background-color: burlywood;
+}
+.card__framework {
+  display: flex;
+  padding: 1rem;
+}
+.card__framework-related-guidance {
+  border-right: 1px solid #ccc;
+  padding-right: 1rem;
+  flex-basis: 50%;
+}
+.card__framework-related-guidance > p {
+  background-color: burlywood;
+}
+.card__framework-detailed-reference {
+  padding-left: 1rem;
+  flex-basis: 50%;
+}
+.card__framework-detailed-reference > p {
+  background-color: burlywood;
+}
+
 .governance {
   display: grid;
   grid-template-rows: repeat(12, 6vh);
