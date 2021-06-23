@@ -1,3 +1,20 @@
+/*
+
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800]:  is where normal styles apply
+1800px + :      Big desktop
+
+
+$breakpoint argument choices
+-phone
+-tab-port
+-tab-land
+-big-desktop
+
+1em = 16px
+*/
 *,
 *::after,
 *::before {
@@ -8,6 +25,21 @@
 
 html {
   font-size: 62, 5%;
+}
+@media (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
 }
 
 body {
@@ -32,6 +64,473 @@ body {
 
 .footer {
   color: #fcfcfc;
+}
+
+.tbm {
+  display: grid;
+  grid-template-rows: repeat(14, max-content);
+  grid-template-columns: repeat(30, 1vw);
+  grid-gap: 1rem;
+}
+.tbm a {
+  text-decoration: none;
+}
+.tbm__business-units {
+  grid-row: 1/3;
+  grid-column: 1/10;
+  display: grid;
+  background-color: cadetblue;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+}
+.tbm__business-units--business-units {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-row: 1/2;
+  grid-column: 1/3;
+}
+.tbm__business-units--revenue-genarating {
+  display: grid;
+  text-align: center;
+  align-items: center;
+  grid-row: 2/3;
+  grid-column: 1/2;
+  background-color: burlywood;
+  margin: 3px;
+  padding: 2px;
+}
+.tbm__business-units--non-revenue-genarating {
+  display: grid;
+  text-align: center;
+  align-items: center;
+  grid-row: 2/3;
+  grid-column: 2/3;
+  background-color: burlywood;
+  margin: 3px;
+  padding: 2px;
+}
+.tbm__business-architecture {
+  grid-row: 1/3;
+  grid-column: 10/20;
+  display: grid;
+  background-color: cadetblue;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+}
+.tbm__business-architecture--business-architecture {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-row: 1/2;
+  grid-column: 1/3;
+}
+.tbm__business-architecture--business-processes {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-row: 2/3;
+  grid-column: 1/2;
+  background-color: burlywood;
+  margin: 3px;
+  padding: 2px;
+}
+.tbm__business-architecture--business-capabilities {
+  display: grid;
+  text-align: center;
+  align-items: center;
+  grid-row: 2/3;
+  grid-column: 2/3;
+  background-color: burlywood;
+  margin: 3px;
+  padding: 2px;
+}
+.tbm__customers-partners {
+  grid-row: 1/3;
+  grid-column: 20/30;
+  display: grid;
+  background-color: cadetblue;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+}
+.tbm__customers-partners--customers-partners {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-row: 1/2;
+  grid-column: 1/3;
+}
+.tbm__customers-partners--product-lines {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-row: 2/3;
+  grid-column: 1/2;
+  background-color: burlywood;
+  margin: 3px;
+  padding: 2px;
+}
+.tbm__customers-partners--digital-platforms {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-row: 2/3;
+  grid-column: 2/3;
+  background-color: burlywood;
+  margin: 3px;
+  padding: 2px;
+}
+.tbm .tbm__solutions {
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(12, 1fr);
+  grid-row: 3/7;
+  grid-column: 1/30;
+  background-color: cadetblue;
+  grid-gap: 2px;
+}
+.tbm .tbm__solutions--solutions {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-row: 1/2;
+  grid-column: 1/13;
+  margin: 3px;
+  padding: 2px;
+}
+.tbm .tbm__solutions--applications {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-row: 2/3;
+  grid-column: 4/6;
+  background-color: burlywood;
+  margin: 3px;
+  padding: 2px;
+}
+.tbm .tbm__solutions--products {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-row: 2/3;
+  grid-column: 6/8;
+  background-color: burlywood;
+  margin: 3px;
+  padding: 2px;
+}
+.tbm .tbm__solutions--services {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-row: 2/3;
+  grid-column: 8/10;
+  background-color: burlywood;
+  margin: 3px;
+  padding: 2px;
+}
+.tbm .tbm__solutions--shared-corporate {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-row: 3/5;
+  grid-column: 9/13;
+  background-color: burlywood;
+  margin: 3px;
+  padding: 2px;
+}
+.tbm .tbm__solutions--business {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-row: 3/5;
+  grid-column: 5/9;
+  background-color: burlywood;
+  margin: 3px;
+  padding: 2px;
+}
+.tbm .tbm__solutions--workplace {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-row: 3/5;
+  grid-column: 1/5;
+  background-color: burlywood;
+  margin: 3px;
+  padding: 2px;
+}
+.tbm .tbm__solutions--infrastructure {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-row: 5/7;
+  grid-column: 9/13;
+  background-color: burlywood;
+  margin: 3px;
+  padding: 2px;
+}
+.tbm .tbm__solutions--platform {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-row: 5/7;
+  grid-column: 5/9;
+  background-color: burlywood;
+  margin: 3px;
+  padding: 2px;
+}
+.tbm .tbm__solutions--delivery {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-row: 5/7;
+  grid-column: 1/5;
+  background-color: burlywood;
+  margin: 3px;
+  padding: 2px;
+}
+.tbm .tbm__towers {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(12, 1fr);
+  grid-row: 7/11;
+  grid-column: 1/30;
+  background-color: cadetblue;
+  grid-gap: 2px;
+}
+.tbm .tbm__towers--towers {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-row: 1/2;
+  grid-column: 1/13;
+}
+.tbm .tbm__towers--it-management {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-row: 2/3;
+  grid-column: 10/12;
+  background-color: burlywood;
+  margin: 3px;
+  padding: 2px;
+}
+.tbm .tbm__towers--security-compliance {
+  display: grid;
+  text-align: center;
+  align-content: center;
+  grid-row: 2/3;
+  grid-column: 8/10;
+  background-color: burlywood;
+  margin: 3px;
+  padding: 2px;
+}
+.tbm .tbm__towers--delivery {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-row: 2/3;
+  grid-column: 6/8;
+  background-color: burlywood;
+  margin: 3px;
+  padding: 2px;
+}
+.tbm .tbm__towers--application {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-row: 2/3;
+  grid-column: 4/6;
+  background-color: burlywood;
+  margin: 3px;
+  padding: 2px;
+}
+.tbm .tbm__towers--end-user {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-row: 2/3;
+  grid-column: 2/4;
+  background-color: burlywood;
+  margin: 3px;
+  padding: 2px;
+}
+.tbm .tbm__towers--output {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-row: 3/4;
+  grid-column: 11/13;
+  background-color: burlywood;
+  margin: 3px;
+  padding: 2px;
+}
+.tbm .tbm__towers--platform {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-row: 3/4;
+  grid-column: 9/11;
+  background-color: burlywood;
+  margin: 3px;
+  padding: 2px;
+}
+.tbm .tbm__towers--storage {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-row: 3/4;
+  grid-column: 7/9;
+  background-color: burlywood;
+  margin: 3px;
+  padding: 2px;
+}
+.tbm .tbm__towers--compute {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-row: 3/4;
+  grid-column: 5/7;
+  background-color: burlywood;
+  margin: 3px;
+  padding: 2px;
+}
+.tbm .tbm__towers--network {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-row: 3/4;
+  grid-column: 3/5;
+  background-color: burlywood;
+  margin: 3px;
+  padding: 2px;
+}
+.tbm .tbm__towers--data-center {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-row: 3/4;
+  grid-column: 1/3;
+  background-color: burlywood;
+  margin: 3px;
+  padding: 2px;
+}
+.tbm .tbm__cost-pools {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(27, 1fr);
+  grid-row: 11/14;
+  grid-column: 1/30;
+  background-color: cadetblue;
+  grid-gap: 2px;
+}
+.tbm .tbm__cost-pools--cost-pools {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  grid-row: 1/2;
+  grid-column: 1/28;
+  margin: 3px;
+  padding: 2px;
+}
+.tbm .tbm__cost-pools--internal-labor {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  grid-row: 2/3;
+  grid-column: 1/4;
+  background-color: burlywood;
+  margin: 3px;
+  padding: 2px;
+}
+.tbm .tbm__cost-pools--external-labor {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  grid-row: 2/3;
+  grid-column: 4/7;
+  background-color: burlywood;
+  margin: 3px;
+  padding: 2px;
+}
+.tbm .tbm__cost-pools--outside-services {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  grid-row: 2/3;
+  grid-column: 7/10;
+  background-color: burlywood;
+  margin: 3px;
+  padding: 2px;
+}
+.tbm .tbm__cost-pools--hardware {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  grid-row: 2/3;
+  grid-column: 10/13;
+  background-color: burlywood;
+  margin: 3px;
+  padding: 2px;
+}
+.tbm .tbm__cost-pools--software {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  grid-row: 2/3;
+  grid-column: 13/16;
+  background-color: burlywood;
+  margin: 3px;
+  padding: 2px;
+}
+.tbm .tbm__cost-pools--facilities-power {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  grid-row: 2/3;
+  grid-column: 16/19;
+  background-color: burlywood;
+  margin: 3px;
+  padding: 2px;
+}
+.tbm .tbm__cost-pools--telecom {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  grid-row: 2/3;
+  grid-column: 19/22;
+  background-color: burlywood;
+  margin: 3px;
+  padding: 2px;
+}
+.tbm .tbm__cost-pools--other {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  grid-row: 2/3;
+  grid-column: 22/25;
+  background-color: burlywood;
+  margin: 3px;
+  padding: 2px;
+}
+.tbm .tbm__cost-pools--internal-services {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  grid-row: 2/3;
+  grid-column: 25/28;
+  background-color: burlywood;
+  margin: 3px;
+  padding: 2px;
 }
 
 body {
