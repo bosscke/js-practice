@@ -6,6 +6,14 @@
 @import "base/utilities";
 
 @import "layout/tbm";
-@import "layout/business-layer/business.scss";
+@import "layout/card";
+@import "layout/business-layer/solutions";
+@import "layout/business-layer/1-workplace/card-client-computing";
+@import "layout/business-layer/1-workplace/card-communication-collaboration";
+@import "layout/business-layer/1-workplace/card-connectivity";
+@import "layout/business-layer/2-business/card-product-management";
+@import "layout/business-layer/2-business/card-sales-marketing";
+@import "layout/business-layer/2-business/card-manufacturing-delivery";
+@import "layout/business-layer/2-business/card-customer-service";
 
 @import "pages/home";

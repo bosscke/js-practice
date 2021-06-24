@@ -21,6 +21,9 @@ body {
       li {
         display: inline;
       }
+      li:first-child {
+        margin-right: 2rem;
+      }
 
       a {
         text-decoration: none;
