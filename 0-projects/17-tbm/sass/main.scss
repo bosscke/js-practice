@@ -8,6 +8,7 @@
 @import "layout/tbm";
 @import "layout/card";
 @import "layout/business-layer/solutions";
+
 @import "layout/business-layer/1-workplace/card-client-computing";
 @import "layout/business-layer/1-workplace/card-communication-collaboration";
 @import "layout/business-layer/1-workplace/card-connectivity";
@@ -15,5 +16,18 @@
 @import "layout/business-layer/2-business/card-sales-marketing";
 @import "layout/business-layer/2-business/card-manufacturing-delivery";
 @import "layout/business-layer/2-business/card-customer-service";
+@import "layout/business-layer/3-shared-corporate/card-finance";
+@import "layout/business-layer/3-shared-corporate/card-workforce";
+@import "layout/business-layer/3-shared-corporate/card-vendor-procurement";
+@import "layout/business-layer/3-shared-corporate/card-hsse";
+@import "layout/business-layer/3-shared-corporate/card-rac";
+@import "layout/business-layer/3-shared-corporate/card-legal";
+@import "layout/business-layer/3-shared-corporate/card-property-facility";
+@import "layout/business-layer/3-shared-corporate/card-corporate-communications";
+@import "layout/business-layer/4-delivery/card-strategy-planning";
+@import "layout/business-layer/4-delivery/card-development";
+@import "layout/business-layer/4-delivery/card-support";
+@import "layout/business-layer/4-delivery/card-operations";
+@import "layout/business-layer/4-delivery/card-security-compliance";
 
 @import "pages/home";

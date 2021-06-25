@@ -1,6 +1,6 @@
-.customer-service {
+.strategy-planning {
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(8, 1fr);
   grid-template-columns: max-content max-content 1fr;
   grid-gap: 2px;
   &__business-object {
@@ -22,7 +22,7 @@
     padding: 0 1rem;
   }
   &__1 {
-    grid-row: 2/4;
+    grid-row: 2/9;
     grid-column: 1/2;
     border: 1px solid $charcoal;
     padding: 0 1rem;
@@ -71,6 +71,66 @@
     border: 1px solid $charcoal;
     padding: 0 1rem;
     grid-row: 6/7;
+    grid-column: 3/4;
+  }
+  &__7 {
+    border: 1px solid $charcoal;
+    padding: 0 1rem;
+    grid-row: 7/8;
+    grid-column: 2/3;
+  }
+  &__7a {
+    border: 1px solid $charcoal;
+    padding: 0 1rem;
+    grid-row: 7/8;
+    grid-column: 3/4;
+  }
+  &__8 {
+    border: 1px solid $charcoal;
+    padding: 0 1rem;
+    grid-row: 8/9;
+    grid-column: 2/3;
+  }
+  &__8a {
+    border: 1px solid $charcoal;
+    padding: 0 1rem;
+    grid-row: 8/9;
+    grid-column: 3/4;
+  }
+  &__9 {
+    border: 1px solid $charcoal;
+    padding: 0 1rem;
+    grid-row: 9/10;
+    grid-column: 2/3;
+  }
+  &__9a {
+    border: 1px solid $charcoal;
+    padding: 0 1rem;
+    grid-row: 9/10;
+    grid-column: 3/4;
+  }
+  &__10 {
+    border: 1px solid $charcoal;
+    padding: 0 1rem;
+    grid-row: 10/11;
+    grid-column: 2/3;
+  }
+  &__10a {
+    border: 1px solid $charcoal;
+    padding: 0 1rem;
+    grid-row: 10/11;
+    grid-column: 3/4;
+  }
+  &__11 {
+    border: 1px solid $charcoal;
+    padding: 0 1rem;
+    grid-row: 11/12;
+    grid-column: 2/3;
+  }
+  &__11a {
+    border: 1px solid $charcoal;
+    padding: 0 1rem;
+    grid-row: 11/12;
     grid-column: 3/4;
   }
 }
