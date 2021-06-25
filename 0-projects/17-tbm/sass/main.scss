@@ -29,5 +29,11 @@
 @import "layout/business-layer/4-delivery/card-support";
 @import "layout/business-layer/4-delivery/card-operations";
 @import "layout/business-layer/4-delivery/card-security-compliance";
+@import "layout/business-layer/5-platform/card-application";
+@import "layout/business-layer/5-platform/card-data";
+@import "layout/business-layer/6-infrastructure/card-data-center";
+@import "layout/business-layer/6-infrastructure/card-network";
+@import "layout/business-layer/6-infrastructure/card-compute";
+@import "layout/business-layer/6-infrastructure/card-storage";
 
 @import "pages/home";
