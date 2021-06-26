@@ -37,5 +37,16 @@
 @import "layout/business-layer/6-infrastructure/card-storage";
 
 @import "layout/2-it-layer/towers";
+@import "layout/2-it-layer/1-data-center/card-data-center";
+@import "layout/2-it-layer/2-compute/card-compute";
+@import "layout/2-it-layer/3-storage/card-storage";
+@import "layout/2-it-layer/4-network/card-network";
+@import "layout/2-it-layer/5-platform/card-platform";
+@import "layout/2-it-layer/6-output/card-output";
+@import "layout/2-it-layer/7-end-user/card-end-user";
+@import "layout/2-it-layer/8-application/card-application";
+@import "layout/2-it-layer/9-delivery/card-delivery";
+@import "layout/2-it-layer/10-security-compliance/card-security-compliance";
+@import "layout/2-it-layer/11-it-management/card-it-management";
 
 @import "pages/home";
