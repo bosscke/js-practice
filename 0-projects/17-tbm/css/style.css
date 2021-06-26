@@ -4222,6 +4222,540 @@ body {
   grid-column: 3/4;
 }
 
+.towers {
+  display: grid;
+  grid-template-rows: repeat(9, minmax(7vh, min-content));
+  grid-template-columns: repeat(11, 7vw);
+  grid-gap: 1rem;
+}
+.towers__towers {
+  grid-row: 1/2;
+  grid-column: 1/12;
+  background-color: #36454f;
+  color: #fcfcfc;
+  display: grid;
+  justify-content: center;
+  padding: 1rem;
+}
+.towers__data-center {
+  grid-row: 2/3;
+  grid-column: 1/2;
+  display: grid;
+  justify-content: center;
+  border-bottom: 2px solid #36454f;
+  margin-top: 5px;
+}
+.towers__edc {
+  grid-row: 3/4;
+  grid-column: 1/2;
+  display: grid;
+  text-align: center;
+  align-content: center;
+  background-color: #36454f;
+  color: #fcfcfc;
+  padding: 5px;
+}
+.towers__other-facilities {
+  grid-row: 4/5;
+  grid-column: 1/2;
+  display: grid;
+  text-align: center;
+  align-content: center;
+  background-color: #36454f;
+  color: #fcfcfc;
+  padding: 5px;
+}
+.towers__compute {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  display: grid;
+  justify-content: center;
+  border-bottom: 2px solid #36454f;
+  margin-top: 5px;
+}
+.towers__servers {
+  grid-row: 3/4;
+  grid-column: 2/3;
+  display: grid;
+  text-align: center;
+  align-content: center;
+  background-color: #36454f;
+  color: #fcfcfc;
+  padding: 5px;
+}
+.towers__unix {
+  grid-row: 4/5;
+  grid-column: 2/3;
+  display: grid;
+  text-align: center;
+  align-content: center;
+  background-color: #36454f;
+  color: #fcfcfc;
+  padding: 5px;
+}
+.towers__midrange {
+  grid-row: 5/6;
+  grid-column: 2/3;
+  display: grid;
+  text-align: center;
+  align-content: center;
+  background-color: #36454f;
+  color: #fcfcfc;
+  padding: 5px;
+}
+.towers__converged-infrastructure {
+  grid-row: 6/7;
+  grid-column: 2/3;
+  display: grid;
+  text-align: center;
+  align-content: center;
+  background-color: #36454f;
+  color: #fcfcfc;
+  padding: 5px;
+}
+.towers__mainframe {
+  grid-row: 7/8;
+  grid-column: 2/3;
+  display: grid;
+  text-align: center;
+  align-content: center;
+  background-color: #36454f;
+  color: #fcfcfc;
+  padding: 5px;
+}
+.towers__hpc {
+  grid-row: 8/9;
+  grid-column: 2/3;
+  display: grid;
+  text-align: center;
+  align-content: center;
+  background-color: #36454f;
+  color: #fcfcfc;
+  padding: 5px;
+}
+.towers__storage {
+  grid-row: 2/3;
+  grid-column: 3/4;
+  display: grid;
+  justify-content: center;
+  border-bottom: 2px solid #36454f;
+  margin-top: 5px;
+}
+.towers__online-storage {
+  grid-row: 3/4;
+  grid-column: 3/4;
+  display: grid;
+  text-align: center;
+  align-content: center;
+  background-color: #36454f;
+  color: #fcfcfc;
+  padding: 5px;
+}
+.towers__offline-storage {
+  grid-row: 4/5;
+  grid-column: 3/4;
+  display: grid;
+  text-align: center;
+  align-content: center;
+  background-color: #36454f;
+  color: #fcfcfc;
+  padding: 5px;
+}
+.towers__mainframe-online-storage {
+  grid-row: 5/6;
+  grid-column: 3/4;
+  display: grid;
+  text-align: center;
+  align-content: center;
+  background-color: #36454f;
+  color: #fcfcfc;
+  padding: 5px;
+}
+.towers__mainframe-offline-storage {
+  grid-row: 6/7;
+  grid-column: 3/4;
+  display: grid;
+  text-align: center;
+  align-content: center;
+  background-color: #36454f;
+  color: #fcfcfc;
+  padding: 5px;
+}
+.towers__network {
+  grid-row: 2/3;
+  grid-column: 4/5;
+  display: grid;
+  justify-content: center;
+  border-bottom: 2px solid #36454f;
+  margin-top: 5px;
+}
+.towers__lan-wan {
+  grid-row: 3/4;
+  grid-column: 4/5;
+  display: grid;
+  text-align: center;
+  align-content: center;
+  background-color: #36454f;
+  color: #fcfcfc;
+  padding: 5px;
+}
+.towers__voice {
+  grid-row: 4/5;
+  grid-column: 4/5;
+  display: grid;
+  text-align: center;
+  align-content: center;
+  background-color: #36454f;
+  color: #fcfcfc;
+  padding: 5px;
+}
+.towers__transport {
+  grid-row: 5/6;
+  grid-column: 4/5;
+  display: grid;
+  text-align: center;
+  align-content: center;
+  background-color: #36454f;
+  color: #fcfcfc;
+  padding: 5px;
+}
+.towers__platform {
+  grid-row: 2/3;
+  grid-column: 5/6;
+  display: grid;
+  justify-content: center;
+  border-bottom: 2px solid #36454f;
+  margin-top: 5px;
+}
+.towers__database {
+  grid-row: 3/4;
+  grid-column: 5/6;
+  display: grid;
+  text-align: center;
+  align-content: center;
+  background-color: #36454f;
+  color: #fcfcfc;
+  padding: 5px;
+}
+.towers__middleware {
+  grid-row: 4/5;
+  grid-column: 5/6;
+  display: grid;
+  text-align: center;
+  align-content: center;
+  background-color: #36454f;
+  color: #fcfcfc;
+  padding: 5px;
+}
+.towers__mainframe-database {
+  grid-row: 5/6;
+  grid-column: 5/6;
+  display: grid;
+  text-align: center;
+  align-content: center;
+  background-color: #36454f;
+  color: #fcfcfc;
+  padding: 5px;
+}
+.towers__mainframe-middleware {
+  grid-row: 6/7;
+  grid-column: 5/6;
+  display: grid;
+  text-align: center;
+  align-content: center;
+  background-color: #36454f;
+  color: #fcfcfc;
+  padding: 5px;
+}
+.towers__container-orchestration {
+  grid-row: 7/8;
+  grid-column: 5/6;
+  display: grid;
+  text-align: center;
+  align-content: center;
+  background-color: #36454f;
+  color: #fcfcfc;
+  padding: 5px;
+}
+.towers__big-data {
+  grid-row: 8/9;
+  grid-column: 5/6;
+  display: grid;
+  text-align: center;
+  align-content: center;
+  background-color: #36454f;
+  color: #fcfcfc;
+  padding: 5px;
+}
+.towers__output {
+  grid-row: 2/3;
+  grid-column: 6/7;
+  display: grid;
+  justify-content: center;
+  border-bottom: 2px solid #36454f;
+  margin-top: 5px;
+}
+.towers__central-print {
+  grid-row: 3/4;
+  grid-column: 6/7;
+  display: grid;
+  text-align: center;
+  align-content: center;
+  background-color: #36454f;
+  color: #fcfcfc;
+  padding: 5px;
+}
+.towers__end-user {
+  grid-row: 2/3;
+  grid-column: 7/8;
+  display: grid;
+  justify-content: center;
+  border-bottom: 2px solid #36454f;
+  margin-top: 5px;
+}
+.towers__workspace {
+  grid-row: 3/4;
+  grid-column: 7/8;
+  display: grid;
+  text-align: center;
+  align-content: center;
+  background-color: #36454f;
+  color: #fcfcfc;
+  padding: 5px;
+}
+.towers__mobile-devices {
+  grid-row: 4/5;
+  grid-column: 7/8;
+  display: grid;
+  text-align: center;
+  align-content: center;
+  background-color: #36454f;
+  color: #fcfcfc;
+  padding: 5px;
+}
+.towers__end-user-software {
+  grid-row: 5/6;
+  grid-column: 7/8;
+  display: grid;
+  text-align: center;
+  align-content: center;
+  background-color: #36454f;
+  color: #fcfcfc;
+  padding: 5px;
+}
+.towers__network-printers {
+  grid-row: 6/7;
+  grid-column: 7/8;
+  display: grid;
+  text-align: center;
+  align-content: center;
+  background-color: #36454f;
+  color: #fcfcfc;
+  padding: 5px;
+}
+.towers__conferencing-audio-video {
+  grid-row: 7/8;
+  grid-column: 7/8;
+  display: grid;
+  text-align: center;
+  align-content: center;
+  background-color: #36454f;
+  color: #fcfcfc;
+  padding: 5px;
+}
+.towers__it-help-desk {
+  grid-row: 8/9;
+  grid-column: 7/8;
+  display: grid;
+  text-align: center;
+  align-content: center;
+  background-color: #36454f;
+  color: #fcfcfc;
+  padding: 5px;
+}
+.towers__deskside-support {
+  grid-row: 9/10;
+  grid-column: 7/8;
+  display: grid;
+  text-align: center;
+  align-content: center;
+  background-color: #36454f;
+  color: #fcfcfc;
+  padding: 5px;
+}
+.towers__application {
+  grid-row: 2/3;
+  grid-column: 8/9;
+  display: grid;
+  justify-content: center;
+  border-bottom: 2px solid #36454f;
+  margin-top: 5px;
+}
+.towers__application-development {
+  grid-row: 3/4;
+  grid-column: 8/9;
+  display: grid;
+  text-align: center;
+  align-content: center;
+  background-color: #36454f;
+  color: #fcfcfc;
+  padding: 5px;
+}
+.towers__aso {
+  grid-row: 4/5;
+  grid-column: 8/9;
+  display: grid;
+  text-align: center;
+  align-content: center;
+  background-color: #36454f;
+  color: #fcfcfc;
+  padding: 5px;
+}
+.towers__business-software {
+  grid-row: 5/6;
+  grid-column: 8/9;
+  display: grid;
+  text-align: center;
+  align-content: center;
+  background-color: #36454f;
+  color: #fcfcfc;
+  padding: 5px;
+}
+.towers__delivery {
+  grid-row: 2/3;
+  grid-column: 9/10;
+  display: grid;
+  justify-content: center;
+  border-bottom: 2px solid #36454f;
+  margin-top: 5px;
+}
+.towers__itsm {
+  grid-row: 3/4;
+  grid-column: 9/10;
+  display: grid;
+  text-align: center;
+  align-content: center;
+  background-color: #36454f;
+  color: #fcfcfc;
+  padding: 5px;
+}
+.towers__operations-center {
+  grid-row: 4/5;
+  grid-column: 9/10;
+  display: grid;
+  text-align: center;
+  align-content: center;
+  background-color: #36454f;
+  color: #fcfcfc;
+  padding: 5px;
+}
+.towers__pppm {
+  grid-row: 5/6;
+  grid-column: 9/10;
+  display: grid;
+  text-align: center;
+  align-content: center;
+  background-color: #36454f;
+  color: #fcfcfc;
+  padding: 5px;
+}
+.towers__client-management {
+  grid-row: 6/7;
+  grid-column: 9/10;
+  display: grid;
+  text-align: center;
+  align-content: center;
+  background-color: #36454f;
+  color: #fcfcfc;
+  padding: 5px;
+}
+.towers__security-compliance {
+  grid-row: 2/3;
+  grid-column: 10/11;
+  display: grid;
+  text-align: center;
+  border-bottom: 2px solid #36454f;
+  margin-top: 5px;
+}
+.towers__security {
+  grid-row: 3/4;
+  grid-column: 10/11;
+  display: grid;
+  text-align: center;
+  align-content: center;
+  background-color: #36454f;
+  color: #fcfcfc;
+  padding: 5px;
+}
+.towers__compliance {
+  grid-row: 4/5;
+  grid-column: 10/11;
+  display: grid;
+  text-align: center;
+  align-content: center;
+  background-color: #36454f;
+  color: #fcfcfc;
+  padding: 5px;
+}
+.towers__disaster-recovery {
+  grid-row: 5/6;
+  grid-column: 10/11;
+  display: grid;
+  text-align: center;
+  align-content: center;
+  background-color: #36454f;
+  color: #fcfcfc;
+  padding: 5px;
+}
+.towers__it-management {
+  grid-row: 2/3;
+  grid-column: 11/12;
+  display: grid;
+  text-align: center;
+  border-bottom: 2px solid #36454f;
+  margin-top: 5px;
+}
+.towers__itmsp {
+  grid-row: 3/4;
+  grid-column: 11/12;
+  display: grid;
+  text-align: center;
+  align-content: center;
+  background-color: #36454f;
+  color: #fcfcfc;
+  padding: 5px;
+}
+.towers__ea {
+  grid-row: 4/5;
+  grid-column: 11/12;
+  display: grid;
+  text-align: center;
+  align-content: center;
+  background-color: #36454f;
+  color: #fcfcfc;
+  padding: 5px;
+}
+.towers__it-finance {
+  grid-row: 5/6;
+  grid-column: 11/12;
+  display: grid;
+  text-align: center;
+  align-content: center;
+  background-color: #36454f;
+  color: #fcfcfc;
+  padding: 5px;
+}
+.towers__it-vendor-management {
+  grid-row: 6/7;
+  grid-column: 11/12;
+  display: grid;
+  text-align: center;
+  align-content: center;
+  background-color: #36454f;
+  color: #fcfcfc;
+  padding: 5px;
+}
+
 body {
   display: grid;
   grid-template-rows: minmax(max-content);

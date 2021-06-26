@@ -1,0 +1,538 @@
+.towers {
+  display: grid;
+  grid-template-rows: repeat(9, minmax(7vh, min-content));
+  grid-template-columns: repeat(11, 7vw);
+  grid-gap: 1rem;
+  &__towers {
+    grid-row: 1/2;
+    grid-column: 1 / 12;
+    background-color: $charcoal;
+    color: $prime-color;
+    display: grid;
+    justify-content: center;
+    padding: 1rem;
+  }
+  &__data-center {
+    grid-row: 2/3;
+    grid-column: 1 / 2;
+    display: grid;
+    justify-content: center;
+    border-bottom: 2px solid $charcoal;
+    margin-top: 5px;
+  }
+  &__edc {
+    grid-row: 3/4;
+    grid-column: 1 / 2;
+    display: grid;
+    text-align: center;
+    align-content: center;
+    background-color: $charcoal;
+    color: $prime-color;
+    padding: 5px;
+  }
+  &__other-facilities {
+    grid-row: 4/5;
+    grid-column: 1 / 2;
+    display: grid;
+    text-align: center;
+    align-content: center;
+    background-color: $charcoal;
+    color: $prime-color;
+    padding: 5px;
+  }
+  &__compute {
+    grid-row: 2/3;
+    grid-column: 2 / 3;
+    display: grid;
+    justify-content: center;
+    border-bottom: 2px solid $charcoal;
+    margin-top: 5px;
+  }
+
+  &__servers {
+    grid-row: 3/4;
+    grid-column: 2 / 3;
+    display: grid;
+    text-align: center;
+    align-content: center;
+    background-color: $charcoal;
+    color: $prime-color;
+    padding: 5px;
+  }
+  &__unix {
+    grid-row: 4/5;
+    grid-column: 2 / 3;
+    display: grid;
+    text-align: center;
+    align-content: center;
+    background-color: $charcoal;
+    color: $prime-color;
+    padding: 5px;
+  }
+  &__midrange {
+    grid-row: 5 / 6;
+    grid-column: 2 / 3;
+    display: grid;
+    text-align: center;
+    align-content: center;
+    background-color: $charcoal;
+    color: $prime-color;
+    padding: 5px;
+  }
+  &__converged-infrastructure {
+    grid-row: 6 / 7;
+    grid-column: 2 / 3;
+    display: grid;
+    text-align: center;
+    align-content: center;
+    background-color: $charcoal;
+    color: $prime-color;
+    padding: 5px;
+  }
+  &__mainframe {
+    grid-row: 7 / 8;
+    grid-column: 2 / 3;
+    display: grid;
+    text-align: center;
+    align-content: center;
+    background-color: $charcoal;
+    color: $prime-color;
+    padding: 5px;
+  }
+  &__hpc {
+    grid-row: 8 / 9;
+    grid-column: 2 / 3;
+    display: grid;
+    text-align: center;
+    align-content: center;
+    background-color: $charcoal;
+    color: $prime-color;
+    padding: 5px;
+  }
+
+  &__storage {
+    grid-row: 2/3;
+    grid-column: 3 / 4;
+    display: grid;
+    justify-content: center;
+    border-bottom: 2px solid $charcoal;
+    margin-top: 5px;
+  }
+  &__online-storage {
+    grid-row: 3 / 4;
+    grid-column: 3 / 4;
+    display: grid;
+    text-align: center;
+    align-content: center;
+    background-color: $charcoal;
+    color: $prime-color;
+    padding: 5px;
+  }
+  &__offline-storage {
+    grid-row: 4 / 5;
+    grid-column: 3 / 4;
+    display: grid;
+    text-align: center;
+    align-content: center;
+    background-color: $charcoal;
+    color: $prime-color;
+    padding: 5px;
+  }
+  &__mainframe-online-storage {
+    grid-row: 5 / 6;
+    grid-column: 3 / 4;
+    display: grid;
+    text-align: center;
+    align-content: center;
+    background-color: $charcoal;
+    color: $prime-color;
+    padding: 5px;
+  }
+  &__mainframe-offline-storage {
+    grid-row: 6 / 7;
+    grid-column: 3 / 4;
+    display: grid;
+    text-align: center;
+    align-content: center;
+    background-color: $charcoal;
+    color: $prime-color;
+    padding: 5px;
+  }
+
+  &__network {
+    grid-row: 2/3;
+    grid-column: 4 / 5;
+    display: grid;
+    justify-content: center;
+    border-bottom: 2px solid $charcoal;
+    margin-top: 5px;
+  }
+  &__lan-wan {
+    grid-row: 3 / 4;
+    grid-column: 4 / 5;
+    display: grid;
+    text-align: center;
+    align-content: center;
+    background-color: $charcoal;
+    color: $prime-color;
+    padding: 5px;
+  }
+  &__voice {
+    grid-row: 4 / 5;
+    grid-column: 4 / 5;
+    display: grid;
+    text-align: center;
+    align-content: center;
+    background-color: $charcoal;
+    color: $prime-color;
+    padding: 5px;
+  }
+  &__transport {
+    grid-row: 5 / 6;
+    grid-column: 4 / 5;
+    display: grid;
+    text-align: center;
+    align-content: center;
+    background-color: $charcoal;
+    color: $prime-color;
+    padding: 5px;
+  }
+  &__platform {
+    grid-row: 2/3;
+    grid-column: 5 / 6;
+    display: grid;
+    justify-content: center;
+    border-bottom: 2px solid $charcoal;
+    margin-top: 5px;
+  }
+  &__database {
+    grid-row: 3 / 4;
+    grid-column: 5 / 6;
+    display: grid;
+    text-align: center;
+    align-content: center;
+    background-color: $charcoal;
+    color: $prime-color;
+    padding: 5px;
+  }
+  &__middleware {
+    grid-row: 4 / 5;
+    grid-column: 5 / 6;
+    display: grid;
+    text-align: center;
+    align-content: center;
+    background-color: $charcoal;
+    color: $prime-color;
+    padding: 5px;
+  }
+  &__mainframe-database {
+    grid-row: 5 / 6;
+    grid-column: 5 / 6;
+    display: grid;
+    text-align: center;
+    align-content: center;
+    background-color: $charcoal;
+    color: $prime-color;
+    padding: 5px;
+  }
+  &__mainframe-middleware {
+    grid-row: 6 / 7;
+    grid-column: 5 / 6;
+    display: grid;
+    text-align: center;
+    align-content: center;
+    background-color: $charcoal;
+    color: $prime-color;
+    padding: 5px;
+  }
+  &__container-orchestration {
+    grid-row: 7 / 8;
+    grid-column: 5 / 6;
+    display: grid;
+    text-align: center;
+    align-content: center;
+    background-color: $charcoal;
+    color: $prime-color;
+    padding: 5px;
+  }
+  &__big-data {
+    grid-row: 8 / 9;
+    grid-column: 5 / 6;
+    display: grid;
+    text-align: center;
+    align-content: center;
+    background-color: $charcoal;
+    color: $prime-color;
+    padding: 5px;
+  }
+
+  &__output {
+    grid-row: 2/3;
+    grid-column: 6 / 7;
+    display: grid;
+    justify-content: center;
+    border-bottom: 2px solid $charcoal;
+    margin-top: 5px;
+  }
+  &__central-print {
+    grid-row: 3 / 4;
+    grid-column: 6 / 7;
+    display: grid;
+    text-align: center;
+    align-content: center;
+    background-color: $charcoal;
+    color: $prime-color;
+    padding: 5px;
+  }
+  &__end-user {
+    grid-row: 2/3;
+    grid-column: 7 / 8;
+    display: grid;
+    justify-content: center;
+    border-bottom: 2px solid $charcoal;
+    margin-top: 5px;
+  }
+
+  &__workspace {
+    grid-row: 3 / 4;
+    grid-column: 7 / 8;
+    display: grid;
+    text-align: center;
+    align-content: center;
+    background-color: $charcoal;
+    color: $prime-color;
+    padding: 5px;
+  }
+  &__mobile-devices {
+    grid-row: 4 / 5;
+    grid-column: 7 / 8;
+    display: grid;
+    text-align: center;
+    align-content: center;
+    background-color: $charcoal;
+    color: $prime-color;
+    padding: 5px;
+  }
+  &__end-user-software {
+    grid-row: 5 / 6;
+    grid-column: 7 / 8;
+    display: grid;
+    text-align: center;
+    align-content: center;
+    background-color: $charcoal;
+    color: $prime-color;
+    padding: 5px;
+  }
+  &__network-printers {
+    grid-row: 6 / 7;
+    grid-column: 7 / 8;
+    display: grid;
+    text-align: center;
+    align-content: center;
+    background-color: $charcoal;
+    color: $prime-color;
+    padding: 5px;
+  }
+  &__conferencing-audio-video {
+    grid-row: 7 / 8;
+    grid-column: 7 / 8;
+    display: grid;
+    text-align: center;
+    align-content: center;
+    background-color: $charcoal;
+    color: $prime-color;
+    padding: 5px;
+  }
+  &__it-help-desk {
+    grid-row: 8 / 9;
+    grid-column: 7 / 8;
+    display: grid;
+    text-align: center;
+    align-content: center;
+    background-color: $charcoal;
+    color: $prime-color;
+    padding: 5px;
+  }
+  &__deskside-support {
+    grid-row: 9 / 10;
+    grid-column: 7 / 8;
+    display: grid;
+    text-align: center;
+    align-content: center;
+    background-color: $charcoal;
+    color: $prime-color;
+    padding: 5px;
+  }
+  &__application {
+    grid-row: 2/3;
+    grid-column: 8 / 9;
+    display: grid;
+    justify-content: center;
+    border-bottom: 2px solid $charcoal;
+    margin-top: 5px;
+  }
+  &__application-development {
+    grid-row: 3 / 4;
+    grid-column: 8 / 9;
+    display: grid;
+    text-align: center;
+    align-content: center;
+    background-color: $charcoal;
+    color: $prime-color;
+    padding: 5px;
+  }
+  &__aso {
+    grid-row: 4 / 5;
+    grid-column: 8 / 9;
+    display: grid;
+    text-align: center;
+    align-content: center;
+    background-color: $charcoal;
+    color: $prime-color;
+    padding: 5px;
+  }
+  &__business-software {
+    grid-row: 5 / 6;
+    grid-column: 8 / 9;
+    display: grid;
+    text-align: center;
+    align-content: center;
+    background-color: $charcoal;
+    color: $prime-color;
+    padding: 5px;
+  }
+  &__delivery {
+    grid-row: 2/3;
+    grid-column: 9 / 10;
+    display: grid;
+    justify-content: center;
+    border-bottom: 2px solid $charcoal;
+    margin-top: 5px;
+  }
+  &__itsm {
+    grid-row: 3 / 4;
+    grid-column: 9 / 10;
+    display: grid;
+    text-align: center;
+    align-content: center;
+    background-color: $charcoal;
+    color: $prime-color;
+    padding: 5px;
+  }
+  &__operations-center {
+    grid-row: 4 / 5;
+    grid-column: 9 / 10;
+    display: grid;
+    text-align: center;
+    align-content: center;
+    background-color: $charcoal;
+    color: $prime-color;
+    padding: 5px;
+  }
+  &__pppm {
+    grid-row: 5 / 6;
+    grid-column: 9 / 10;
+    display: grid;
+    text-align: center;
+    align-content: center;
+    background-color: $charcoal;
+    color: $prime-color;
+    padding: 5px;
+  }
+  &__client-management {
+    grid-row: 6 / 7;
+    grid-column: 9 / 10;
+    display: grid;
+    text-align: center;
+    align-content: center;
+    background-color: $charcoal;
+    color: $prime-color;
+    padding: 5px;
+  }
+  &__security-compliance {
+    grid-row: 2/3;
+    grid-column: 10 / 11;
+    display: grid;
+    text-align: center;
+    border-bottom: 2px solid $charcoal;
+    margin-top: 5px;
+  }
+  &__security {
+    grid-row: 3 / 4;
+    grid-column: 10 / 11;
+    display: grid;
+    text-align: center;
+    align-content: center;
+    background-color: $charcoal;
+    color: $prime-color;
+    padding: 5px;
+  }
+  &__compliance {
+    grid-row: 4 / 5;
+    grid-column: 10 / 11;
+    display: grid;
+    text-align: center;
+    align-content: center;
+    background-color: $charcoal;
+    color: $prime-color;
+    padding: 5px;
+  }
+  &__disaster-recovery {
+    grid-row: 5 / 6;
+    grid-column: 10 / 11;
+    display: grid;
+    text-align: center;
+    align-content: center;
+    background-color: $charcoal;
+    color: $prime-color;
+    padding: 5px;
+  }
+  &__it-management {
+    grid-row: 2/3;
+    grid-column: 11 / 12;
+    display: grid;
+    text-align: center;
+    border-bottom: 2px solid $charcoal;
+    margin-top: 5px;
+  }
+  &__itmsp {
+    grid-row: 3 / 4;
+    grid-column: 11 / 12;
+    display: grid;
+    text-align: center;
+    align-content: center;
+    background-color: $charcoal;
+    color: $prime-color;
+    padding: 5px;
+  }
+  &__ea {
+    grid-row: 4 / 5;
+    grid-column: 11 / 12;
+    display: grid;
+    text-align: center;
+    align-content: center;
+    background-color: $charcoal;
+    color: $prime-color;
+    padding: 5px;
+  }
+  &__it-finance {
+    grid-row: 5 / 6;
+    grid-column: 11 / 12;
+    display: grid;
+    text-align: center;
+    align-content: center;
+    background-color: $charcoal;
+    color: $prime-color;
+    padding: 5px;
+  }
+  &__it-vendor-management {
+    grid-row: 6 / 7;
+    grid-column: 11 / 12;
+    display: grid;
+    text-align: center;
+    align-content: center;
+    background-color: $charcoal;
+    color: $prime-color;
+    padding: 5px;
+  }
+}
