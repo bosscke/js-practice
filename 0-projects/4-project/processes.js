@@ -202,3 +202,7 @@ const itil_v3 = {
     },
   },
 };
+
+const { itil_v3.lifecycle_phase } = itil_v3;
+
+console.log(strategic_assesment);
