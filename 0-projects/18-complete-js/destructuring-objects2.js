@@ -1,4 +1,6 @@
-// The spread operator
+//Destructuring II
+
+"use strict";
 
 const restaurant = {
   name: "La Pomodoro",
@@ -32,27 +34,9 @@ const restaurant = {
   },
 };
 
-const arr = [7, 8, 9];
-const badArr = [1, 2, arr[0], arr[1], arr[2]];
-console.log(badArr);
-
-const newArr = [1, 2, ...arr];
-console.log(newArr);
-console.log(...newArr);
-
-const newMenu = [...restaurant.mainMenu, "Gnocci"];
-console.log(newMenu);
-
-//Copy array
-const mainMenuCopy = [...restaurant.mainMenu];
-
-//Join 2 arrays
-const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
-console.log(menu);
-
-//Iterables are arrays, strings, maps, sets. NOT objects
-
-const str = "Karl-Hajnc";
-const str2 = "Rumenige";
-const letters = [...str, "", ...str2];
-console.log(letters);
+restaurant.orderDelivery({
+  time: "22:30",
+  address: "Freedom Square 2",
+  mainIndex: 0,
+  starterIndex: 0,
+});
