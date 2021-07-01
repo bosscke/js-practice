@@ -1,4 +1,5 @@
-// Short Circuiting (&& and ||)
+// Rest Pattern and Parameters
+
 const restaurant = {
   name: "La Pomodoro",
   location: "Freedom Square 2, Brno, Czech Republic",
@@ -14,7 +15,7 @@ const restaurant = {
       open: 9,
       close: 22,
     },
-    wed: {
+    sat: {
       open: 13,
       close: 22,
     },
@@ -31,13 +32,36 @@ const restaurant = {
   },
 };
 
-//Use ANY data type, return any data type, short-circuiting
-console.log(3 || "Hans");
-console.log("" || "Hans");
-console.log(true || 0);
-console.log(undefined || null);
+// 1)DESTRUCTURING
 
-console.log(undefined || 0 || "" || "Hello" || 77 || null);
+//SPREAD -> because on the RIGHT side of the equal sign =
+const arr = [1, 2, [55, 98]];
+console.log(...arr);
 
-const guests1 = restaurant.numGuests ? restaurant.numGuests : 10;
-console.log(guests1);
+const arr1 = [1, 2, ...[55, 98]];
+console.log(...arr1);
+
+//REST -> because on the LEFT side
+const [a, b, ...others] = [1, 2, 4, 77, 8];
+console.log(a, b, others);
+
+const [pizza, ...food] = [...restaurant.mainMenu, ...restaurant.starterMenu];
+console.log(pizza, food);
+
+// Objects
+const { sat, ...weekdays } = restaurant.openinHours;
+console.log(weekdays);
+
+// 2) FUNCTIONS
+
+const add = function (...numbers) {
+  let sum = 0;
+  for (let i = 0; i < numbers.length; i++) sum += numbers[i];
+  console.log(sum);
+};
+add(2, 3);
+add(5, 3, 7, 2);
+add(8, 2, 5, 3, 2, 1, 4);
+
+const x = [23, 5, 7];
+add(...x);
