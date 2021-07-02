@@ -31,7 +31,7 @@ const restaurant = {
   },
 };
 
-//Use ANY data type, return any data type, short-circuiting
+//Use ANY data type, return any data type, short-circuitin
 console.log(3 || "Hans");
 console.log("" || "Hans");
 console.log(true || 0);
