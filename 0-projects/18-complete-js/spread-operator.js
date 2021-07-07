@@ -52,8 +52,8 @@ console.log(menu);
 
 //Iterables are arrays, strings, maps, sets. NOT objects
 
-const str = "Karl-Hajnc";
-const str2 = "Rumenige";
+const str = "Karl";
+const str2 = "Musterman";
 const letters = [...str, "", ...str2];
 console.log(letters);
 
