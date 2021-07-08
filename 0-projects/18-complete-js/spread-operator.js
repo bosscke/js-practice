@@ -59,5 +59,5 @@ console.log(letters);
 
 // Objects
 
-const newRestaurant = { ...restaurant, established: 1980 };
+const newRestaurant = { ...restaurant, established: 1985 };
 console.log(newRestaurant);
