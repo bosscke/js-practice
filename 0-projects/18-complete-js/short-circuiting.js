@@ -1,5 +1,4 @@
-// The Nullish Coalescing Operator
-
+// Short Circuiting (&& and ||)
 const restaurant = {
   name: "La Pomodoro",
   location: "Freedom Square 2, Brno, Czech Republic",
@@ -32,9 +31,28 @@ const restaurant = {
   },
 };
 
-restaurant.numGuests = 0;
-const guests = restaurant.numGuests || 10;
-console.log(guests);
+//Use ANY data type, return any data type
+console.log("---- OR ----");
+console.log(3 || "Hans");
+console.log("" || "Hans");
+console.log(true || 0);
+console.log(undefined || null);
 
-const guestCorrect = restaurant.numGuests ?? 10;
-console.log(guestCorrect);
+console.log(undefined || 0 || "" || "Hello" || 77 || null);
+
+const guests1 = restaurant.numGuests ? restaurant.numGuests : 10;
+console.log(guests1);
+
+const guests2 = restaurant.numGuests || 10;
+console.log(guests2);
+
+console.log("---- AND ----");
+console.log(0 && "Hans");
+console.log(22 && "Hans");
+console.log("Hello" && 23 && null && "Hans");
+
+//Practical example
+
+if (restaurant.orderPizza) {
+  restaurant.orderPizza("mushrooms", "spinach");
+}
