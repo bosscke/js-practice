@@ -1,10 +1,17 @@
-let word = ["B", "u"];
-let num = 3;
-for (let i = 1; i < num; i++) {
-  word.push("r");
+// Functions
+
+let msg = "Let's get things done!!";
+function updateMessage() {
+  let el = document.getElementById("answer");
+  el.textContent = msg;
+}
+updateMessage();
+
+function getArea(width, height) {
+  return width * height;
 }
 
-word.push("p");
-console.log(word.join(""));
-
-const testing = [1, 2, 3];
+wallWidth = 3;
+wallHeight = 5;
+getArea(3, 5);
+getArea(wallWidth, wallHeight);
