@@ -15,3 +15,5 @@ let hotelName = hotel.name;
 console.log(hotelName);
 let roomsFree = hotel.checkAvailability();
 console.log(roomsFree);
+
+//
