@@ -34,3 +34,4 @@ delete hotel1.name;
 console.log(hotel1.name);
 hotel1.name = "Starra";
 console.log(hotel1.name);
+//
