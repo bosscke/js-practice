@@ -13,3 +13,17 @@ console.log(text.split(","));
 
 //Searching a string
 console.log(text.indexOf("t"));
+console.log(text.indexOf("t", 1));
+console.log(text.indexOf("bb"));
+console.log(text.lastIndexOf("s"));
+
+// Boolean searching functions in ES6 and later
+console.log(text.startsWith("text"));
+console.log(text.endsWith("here"));
+console.log(text.includes("so"));
+
+//Creating modfied versions of a string
+console.log(text.replace("ome", "ame"));
+console.log(text.toUpperCase());
+console.log(text.normalize());
+console.log(text.normalize("NFD"));
