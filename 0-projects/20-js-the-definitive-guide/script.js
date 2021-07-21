@@ -27,3 +27,11 @@ console.log(text.replace("ome", "ame"));
 console.log(text.toUpperCase());
 console.log(text.normalize());
 console.log(text.normalize("NFD"));
+
+//Inspecting individual (16-bit) chracters of a string
+console.log(text.charAt(3));
+console.log(text.charAt(text.length - 1));
+console.log(text.charCodeAt(1));
+console.log(text.codePointAt(1));
+
+console.log("Unicode chacter", "\u2718");
