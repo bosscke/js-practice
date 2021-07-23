@@ -35,3 +35,15 @@ console.log(text.charCodeAt(1));
 console.log(text.codePointAt(1));
 
 console.log("Unicode chacter", "\u2718");
+
+// String padding functions
+
+console.log("x".padStart(3));
+console.log("x".padEnd(3));
+console.log("x".padStart(3, "*"));
+console.log("x".padEnd(3, "-"));
+
+//Space trimming functions. trim() is ES5 others ES 2017
+console.log(" test ".trim());
+console.log(" test ".trimStart());
+console.log("  test   ".trimEnd());
