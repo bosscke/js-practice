@@ -43,7 +43,12 @@ console.log("x".padEnd(3));
 console.log("x".padStart(3, "*"));
 console.log("x".padEnd(3, "-"));
 
-//Space trimming functions. trim() is ES5 others ES 2017
+// Space trimming functions. trim() is ES5 others ES 2017
 console.log(" test ".trim());
 console.log(" test ".trimStart());
 console.log("  test   ".trimEnd());
+
+// Miscellaneous string methods
+
+console.log(text.concat("!"));
+console.log("<-->".repeat(10));
