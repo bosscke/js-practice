@@ -52,3 +52,12 @@ console.log("  test   ".trimEnd());
 
 console.log(text.concat("!"));
 console.log("<-->".repeat(10));
+
+let errorMessage = `\
+\u2718 Test failre at ${filename}:${linenumber}:
+${exception.message}
+Stack trace:
+${exception.stack}
+`;
+
+console.log(errorMessage);
