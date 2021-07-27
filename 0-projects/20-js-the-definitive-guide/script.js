@@ -53,6 +53,11 @@ console.log("  test   ".trimEnd());
 console.log(text.concat("!"));
 console.log("<-->".repeat(10));
 
+let filename = null;
+let linenumber = null;
+let exception = {
+  message: "error",
+};
 let errorMessage = `\
 \u2718 Test failre at ${filename}:${linenumber}:
 ${exception.message}
