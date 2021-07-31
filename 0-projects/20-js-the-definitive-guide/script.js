@@ -67,6 +67,10 @@ ${exception.stack}
 
 console.log(errorMessage);
 
+// Matching PAtterns
+
+console.log(/^HTML/);
+
 // Symbols
 
 let strname = "string name";
@@ -80,4 +84,5 @@ o[strname] = 1;
 o[symname] = 2;
 console.log(o[strname]);
 console.log(o[symname]);
-//
+
+//The Global Object
