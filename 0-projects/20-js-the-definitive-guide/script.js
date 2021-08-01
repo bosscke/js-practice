@@ -67,7 +67,7 @@ ${exception.stack}
 
 console.log(errorMessage);
 
-// Matching PAtterns
+// Matching Patterns
 
 console.log(/^HTML/);
 
@@ -85,4 +85,32 @@ o[symname] = 2;
 console.log(o[strname]);
 console.log(o[symname]);
 
-//The Global Object
+// Imutabel primitives and mutable objects
+let s = "hello";
+s.toUpperCase();
+console.log(s);
+
+//mutable object
+let bo = { x: 1 };
+console.log(bo.x);
+bo.x = 2;
+console.log(bo.x);
+bo.y = 44;
+console.log(bo.x, bo.y);
+
+//Arrays are also mutable
+let a = [1, 2, 3];
+console.log(a);
+a[0] = 66;
+a[3] = 77;
+console.log(a);
+
+//Objects are not compared by value
+
+let oz = { x: 1 },
+  ox = { x: 1 };
+console.log(oz === ox);
+
+let az = [],
+  ax = [];
+console.log(az === ax);
