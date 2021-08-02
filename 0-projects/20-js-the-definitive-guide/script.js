@@ -114,3 +114,9 @@ console.log(oz === ox);
 let az = [],
   ax = [];
 console.log(az === ax);
+
+let ab = [];
+let b = ab;
+b[0] = 1;
+a[0];
+console.log(ab === b);
