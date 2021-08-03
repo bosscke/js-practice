@@ -118,5 +118,24 @@ console.log(az === ax);
 let ab = [];
 let b = ab;
 b[0] = 1;
-a[0];
+ab[0];
+console.log(ab);
 console.log(ab === b);
+
+let ac = ["a", "b", "c"];
+let bc = [];
+for (let i = 0; i < ac.length; i++) {
+  bc[i] = ac[i];
+}
+let c = Array.from(bc);
+console.log(c);
+
+function equalArrays(a, b) {
+  if (a === b) return true;
+  if (a.length !== b.length) return false;
+  for (let i = 0; i < a.length; i++) {
+    if (a[i] !== b[i]) return false;
+  }
+}
+
+//Type Conversion
