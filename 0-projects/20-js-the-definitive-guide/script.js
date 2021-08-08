@@ -142,4 +142,6 @@ function equalArrays(a, b) {
 
 console.log(10 + "objects");
 
-//
+// Type conversions
+
+console.log(10 + " objects");
